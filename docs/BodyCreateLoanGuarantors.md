@@ -1,0 +1,72 @@
+
+
+# BodyCreateLoanGuarantors
+
+Refer table Guarantors for attributes
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**relationshipWithApplicant** | **String** | Father/Mother/Brother/Son/Daughter/Friend/Other relative |  [optional]
+**firstName** | **String** | First Name of the Guarantor |  [optional]
+**middleName** | **String** | Middle Name of the Guarantor |  [optional]
+**lastName** | **String** | Last Name of the Guarantor |  [optional]
+**dateOfBirth** | **LocalDate** | Date of Birth (YYYY-MM-DD) |  [optional]
+**age** | **Integer** | Age in years |  [optional]
+**gender** | **String** | M / F / O |  [optional]
+**currentAddress** | **String** | Free flowing text |  [optional]
+**currentDistrict** | **String** | District in which Guarantor is currently residing |  [optional]
+**currentCity** | **String** | City in which Guarantor is currently residing |  [optional]
+**currentCityTier** | **String** | tier_1, tier_2 etc. for the current city |  [optional]
+**currentState** | **String** | State in which Guarantor is currently residing |  [optional]
+**currentPincode** | **Integer** | Pincode of the current address |  [optional]
+**yearsOfStayInCurrentAddress** | **Integer** | How many years stayed in the current address |  [optional]
+**residenceTypeCurrentAddress** | **String** | rented / owned / leased |  [optional]
+**permanentAddress** | **String** | Free flowing text |  [optional]
+**permanentDistrict** | **String** | District in which Guarantor is currently residing |  [optional]
+**permanentCity** | **String** | City in which Guarantor is currently residing |  [optional]
+**permanentCityTier** | **String** | tier_1, tier_2 etc. for the permanent city |  [optional]
+**permanentState** | **String** | State in which Guarantor is currently residing |  [optional]
+**permanentPincode** | **Integer** | Pincode of the current address |  [optional]
+**yearsOfStayInPermanentAddress** | **Integer** | How many years stayed in the permanent address |  [optional]
+**residenceTypePermanentAddress** | **String** | rented / owned / leased |  [optional]
+**mobileNumber** | **Integer** | Mobile Number of the Guarantor (10 digits) |  [optional]
+**email** | **String** | Personal Email ID of the Guarantor |  [optional]
+**panNumber** | **String** | PAN Number of the Guarantor (10 digit Alphanumeric) |  [optional]
+**panNumberLink** | **List&lt;String&gt;** | PAN Document Link |  [optional]
+**panNumberLinkPassword** | **String** | PAN Document Link Password |  [optional]
+**aadharNumber** | **String** | Aadhar Number of the Guarantor (12 digits) |  [optional]
+**aadharNumberLink** | **List&lt;String&gt;** | Aadhar Document Link |  [optional]
+**aadharNumberLinkPassword** | **String** | Aadhar Document Link Password |  [optional]
+**voterIdNumber** | **String** | Voter ID Number of the Guarantor |  [optional]
+**votingIdNumberLink** | **List&lt;String&gt;** | Voter Document Link |  [optional]
+**votingIdNumberLinkPassword** | **String** | Voter Document Link Password |  [optional]
+**drivingLicenseNumber** | **String** | Driving License Number of the Guarantor |  [optional]
+**drivingLicenceNumberLink** | **List&lt;String&gt;** | Driving License Document Link |  [optional]
+**drivingLicenceNumberLinkPassword** | **String** | Driving License Document Link Password |  [optional]
+**passportNumber** | **String** | Passport Number of the Guarantor |  [optional]
+**passportNumberLink** | **List&lt;String&gt;** | Passport Document Link |  [optional]
+**passportNumberLinkPassword** | **String** | Passport Document Link Password |  [optional]
+**videoImageLink** | **List&lt;String&gt;** | Video KYC of the Guarantor |  [optional]
+**videoImageLinkPassword** | **String** | Video KYC Image link Password of the Guarantor |  [optional]
+**videoKycDetail** | [**BodyCreateLoanVideoKycDetail**](BodyCreateLoanVideoKycDetail.md) |  |  [optional]
+**otherKycNumber** | **String** | KYC Number of the Guarantor |  [optional]
+**otherKycNumberLink** | **List&lt;String&gt;** | KYC Image of the Guarantor |  [optional]
+**otherKycNumberLinkPassword** | **String** | KYC Image Link Password of the Guarantor |  [optional]
+**rentAgreementLink** | **List&lt;String&gt;** | Rent Agreement Document Link |  [optional]
+**rentAgreementLinkPassword** | **String** | Rent Agreement Document Link Password |  [optional]
+**utilityBillsLink** | **List&lt;String&gt;** | Utility Bills Copies (If any) |  [optional]
+**utilityBillsLinkPassword** | **String** | Utility Bills Copies Password (If any) |  [optional]
+**photoLink** | **List&lt;String&gt;** | Photo Image of the Guarantor |  [optional]
+**photoLinkPassword** | **String** | Photo Image Password of the Guarantor |  [optional]
+**maritalStatus** | **String** | married / unmarried |  [optional]
+**religion** | **String** | Religion of the Guarantor |  [optional]
+**nationality** | **String** | Nationality of the Guarantor |  [optional]
+**bureauScore** | **Integer** | Bureau Score of the Guarantor |  [optional]
+**bureauReportLink** | **List&lt;String&gt;** | Guarantor&amp;#39;s Bureau Report PDF |  [optional]
+**bureauReportLinkPassword** | **String** | Guarantor&amp;#39;s Bureau Report Link Password |  [optional]
+**partnerScore** | **Float** | Score Captured by the Partner |  [optional]
+
+
+
