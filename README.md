@@ -1,4 +1,4 @@
-# openapi-java-client
+# credavenue_colending
 
 Allcloud (Allcloud)
 - API version: 0.0.1
