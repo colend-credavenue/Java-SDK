@@ -385,7 +385,11 @@ paths:
         \    <td></td>\n         <td>Total Number of Loans per Bureau Report</td>\n\
         \      <td>2</td> \n</tr> \n      <tr>\n    <td>value_of_total_loans</td>\n\
         \    <td>number</td>\n    <td>float</td>\n         <td>Total value of loans</td>\n\
-        \      <td>20000.0</td> \n</tr> \n      <tr>\n    <td>number_of_enquiries_3months</td>\n\
+        \      <td>20000.0</td> \n</tr> \n  <tr>\n    <td>max_dpd_tradeline_last_6months</td>\n\\    <td>integer</td>\n    <td></td>\n         <td>Max DPD tradeline in last 6 months</td>\n      <td>3</td> \n</tr>  <tr>\n    <td>max_dpd_tradeline_last_3months</td>\n\\    <td>integer</td>\n    <td></td>\n         <td>Max DPD tradeline in last 3 months</td>\n      <td>3</td> \n</tr>
+         <tr>\n    <td>number_of_pl_enquiries_in_last_30days</td>\n\
+        \    <td>integer</td>\n    <td></td>\n         <td>Number of Pl enquires in last 30 dayst</td>\n      <td>3</td> \n</tr>
+         <tr>\n    <td>value_of_total_outstanding_loans</td>\n\
+        \    <td>float</td>\n    <td></td>\n         <td>Value of outstanding loans</td>\n      <td>3</td> \n</tr>     <tr>\n    <td>number_of_enquiries_3months</td>\n\
         \    <td>integer</td>\n    <td></td>\n         <td>Number of Enquiries in\
         \ the Last 3 Months per Bureau Report</td>\n      <td>3</td> \n</tr> \n  \
         \    <tr>\n    <td>number_of_enquiries_6months</td>\n    <td>integer</td>\n\
@@ -2224,6 +2228,10 @@ paths:
               number_of_enquiries_12months: 4
               number_of_writeoff_suitfiled_settled_in_the_last_12_months: 4
               max_dpd_tradeline_last_12months: 6
+              max_dpd_tradeline_last_3months: 1
+              max_dpd_tradeline_last_6months: 1
+              number_of_pl_enquiries_in_last_30days: 1
+              value_of_total_outstanding_loans: 12000
               max_overdue_tradeline: 6
               total_overdue_amount_in_last_12m: 10000
               amount_of_loan_settled_in_last_12m: 25000
@@ -4278,7 +4286,11 @@ paths:
         \    <td></td>\n         <td>Total Number of Loans per Bureau Report</td>\n\
         \      <td>2</td> \n</tr> \n      <tr>\n    <td>value_of_total_loans</td>\n\
         \    <td>number</td>\n    <td>float</td>\n         <td>Total value of loans</td>\n\
-        \      <td>20000.0</td> \n</tr> \n      <tr>\n    <td>number_of_enquiries_3months</td>\n\
+        \      <td>20000.0</td> \n</tr>\n  <tr>\n    <td>max_dpd_tradeline_last_6months</td>\n\\    <td>integer</td>\n    <td></td>\n         <td>Max DPD tradeline in last 6 months</td>\n      <td>3</td> \n</tr>  <tr>\n    <td>max_dpd_tradeline_last_3months</td>\n\\    <td>integer</td>\n    <td></td>\n         <td>Max DPD tradeline in last 3 months</td>\n      <td>3</td> \n</tr>
+         <tr>\n    <td>number_of_pl_enquiries_in_last_30days</td>\n\
+        \    <td>integer</td>\n    <td></td>\n         <td>Number of Pl enquires in last 30 dayst</td>\n      <td>3</td> \n</tr>
+         <tr>\n    <td>value_of_total_outstanding_loans</td>\n\
+        \    <td>float</td>\n    <td></td>\n         <td>Value of outstanding loans</td>\n      <td>3</td> \n</tr>  \n      <tr>\n    <td>number_of_enquiries_3months</td>\n\
         \    <td>integer</td>\n    <td></td>\n         <td>Number of Enquiries in\
         \ the Last 3 Months per Bureau Report</td>\n      <td>3</td> \n</tr> \n  \
         \    <tr>\n    <td>number_of_enquiries_6months</td>\n    <td>integer</td>\n\
@@ -4807,6 +4819,10 @@ paths:
               number_of_enquiries_12months: 4
               number_of_writeoff_suitfiled_settled_12months: 4
               max_dpd_tradeline_12months: 6
+              max_dpd_tradeline_last_3months: 1
+              max_dpd_tradeline_last_6months: 1
+              number_of_pl_enquiries_in_last_30days: 1
+              value_of_total_outstanding_loans: 12000
               max_overdue_tradeline: 6
               total_overdue_amount_12months: 10000
               loan_amount_settled_12months: 25000
@@ -6590,7 +6606,7 @@ paths:
         \ Consultant&quot;,&quot;employement_vintage_current_organisation&quot;:&quot;3&quot;,&quot;payslip_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;payslip_link_password&quot;:&quot;12345678&quot;,&quot;tds_certificate_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;tds_certificate_link_password&quot;:&quot;12345678&quot;}]</td>\
         \ \n</tr> \n      <tr>\n    <td>bureau_report_data</td>\n    <td>object</td>\n\
         \    <td></td>\n    <td>Refer table BureauReportData for attributes</td>\n\
-        \      <td>{&quot;name_of_bureau&quot;:&quot;cibil&quot;,&quot;bureau_vintage&quot;:3,&quot;bureau_score&quot;:650,&quot;bureau_report_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;bureau_report_link_password&quot;:&quot;12345678&quot;,&quot;bureau_json_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;bureau_json_link_password&quot;:&quot;12345678&quot;,&quot;bureau_json&quot;:[&quot;{}&quot;,&quot;{}&quot;],&quot;commercial_bureau_score&quot;:330,&quot;commercial_bureau_score_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;commercial_bureau_score_link_password&quot;:&quot;12345678&quot;,&quot;partner_score_on_the_customer&quot;:800,&quot;total_existing_obligations&quot;:25000,&quot;credit_card_limit&quot;:30000,&quot;number_of_credit_cards&quot;:3,&quot;number_of_unsecured_loans&quot;:2,&quot;value_of_total_unsecured_loans&quot;:20000.0,&quot;number_of_loans&quot;:2,&quot;value_of_total_loans&quot;:20000.0,&quot;number_of_enquiries_3months&quot;:3,&quot;number_of_enquiries_6months&quot;:3,&quot;number_of_enquiries_12months&quot;:4,&quot;number_of_writeoff_suitfiled_settled_12months&quot;:4,&quot;max_dpd_tradeline_12months&quot;:6,&quot;max_overdue_tradeline&quot;:6,&quot;total_overdue_amount_12months&quot;:10000.0,&quot;loan_amount_settled_12months&quot;:25000.0,&quot;nature_of_loan_settled1&quot;:&quot;settled&quot;,&quot;nature_of_loan_settled2&quot;:&quot;closed&quot;,&quot;total_emi_bounces&quot;:3,&quot;emi_bounces_6months&quot;:3,&quot;emi_bounces_12months&quot;:3}</td>\
+        \      <td>{&quot;name_of_bureau&quot;:&quot;cibil&quot;,&quot;bureau_vintage&quot;:3,&quot;bureau_score&quot;:650,&quot;bureau_report_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;bureau_report_link_password&quot;:&quot;12345678&quot;,&quot;bureau_json_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;bureau_json_link_password&quot;:&quot;12345678&quot;,&quot;bureau_json&quot;:[&quot;{}&quot;,&quot;{}&quot;],&quot;commercial_bureau_score&quot;:330,&quot;commercial_bureau_score_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;commercial_bureau_score_link_password&quot;:&quot;12345678&quot;,&quot;partner_score_on_the_customer&quot;:800,&quot;total_existing_obligations&quot;:25000,&quot;credit_card_limit&quot;:30000,&quot;number_of_credit_cards&quot;:3,&quot;number_of_unsecured_loans&quot;:2,&quot;value_of_total_unsecured_loans&quot;:20000.0,&quot;number_of_loans&quot;:2,&quot;value_of_total_loans&quot;:20000.0,&quot;number_of_enquiries_3months&quot;:3,&quot;number_of_enquiries_6months&quot;:3,&quot;number_of_enquiries_12months&quot;:4,&quot;number_of_writeoff_suitfiled_settled_12months&quot;:4,&quot;max_dpd_tradeline_12months&quot;:6,&quot;max_overdue_tradeline&quot;:6,&quot;total_overdue_amount_12months&quot;:10000.0,&quot;loan_amount_settled_12months&quot;:25000.0,&quot;nature_of_loan_settled1&quot;:&quot;settled&quot;,&quot;nature_of_loan_settled2&quot;:&quot;closed&quot;,&quot;total_emi_bounces&quot;:3,&quot;emi_bounces_6months&quot;:3,&quot;emi_bounces_12months&quot;:3&quot;max_dpd_tradeline_last_6months&quot;:3,&quot;emi_bounces_12months&quot;:3 &quot;max_dpd_tradeline_last_3months&quot;:3,&quot;emi_bounces_12months&quot;:3 &quot;number_of_pl_enquiries_in_last_30days&quot;:3,&quot;emi_bounces_12months&quot;:3 &quot;value_of_total_outstanding_loans&quot;:3,&quot;emi_bounces_12months&quot;:3}</td>\
         \ \n</tr> \n      <tr>\n    <td>client_loan_id</td>\n    <td>string</td>\n\
         \    <td></td>\n         <td>Loan ID as per Partner&#39;s LMS</td>\n     \
         \ <td>LOAN00001</td> \n</tr> \n      <tr>\n    <td>business_data</td>\n  \
@@ -7183,6 +7199,10 @@ paths:
                 number_of_enquiries_12months: 4
                 number_of_writeoff_suitfiled_settled_12months: 4
                 max_dpd_tradeline_12months: 6
+                max_dpd_tradeline_last_3months: 1
+                max_dpd_tradeline_last_6months: 1
+                number_of_pl_enquiries_in_last_30days: 1
+                value_of_total_outstanding_loans: 12000
                 max_overdue_tradeline: 6
                 total_overdue_amount_12months: 10000
                 loan_amount_settled_12months: 25000
@@ -7432,6 +7452,10 @@ paths:
                   number_of_enquiries_12months: 4
                   number_of_writeoff_suitfiled_settled_12months: 4
                   max_dpd_tradeline_12months: 6
+                  max_dpd_tradeline_last_3months: 1
+                  max_dpd_tradeline_last_6months: 1
+                  number_of_pl_enquiries_in_last_30days: 1
+                  value_of_total_outstanding_loans: 12000
                   max_overdue_tradeline: 6
                   total_overdue_amount_12months: 10000
                   loan_amount_settled_12months: 25000
@@ -10259,6 +10283,18 @@ components:
         max_dpd_tradeline_12months:
           description: Maximum DPD Tradeline in the Last 12 Months
           type: integer
+        max_dpd_tradeline_last_3months:
+          description: Maximum DPD Tradeline in the Last 3 Months
+          type: integer
+        max_dpd_tradeline_last_6months:
+          description: Maximum DPD Tradeline in the Last 6 Months
+          type: integer
+        number_of_pl_enquiries_in_last_30days:
+          description: Number of Pl enquires in the Last 12 Months
+          type: integer
+        value_of_total_outstanding_loans:
+          description: Value of total outstanding loan in the Last 12 Months
+          type: float
         max_overdue_tradeline:
           description: Maximum Overdue Tradeline
           type: integer
@@ -10701,6 +10737,10 @@ components:
           name_of_bureau: name_of_bureau
           bureau_score: 1
           max_dpd_tradeline_12months: 6
+          max_dpd_tradeline_last_6months: 12
+          max_dpd_tradeline_last_3months: 2
+          number_of_pl_enquiries_in_last_30days: 1
+          value_of_total_outstanding_loans: 12000
           loan_amount_settled_12months: 6.778325
           nature_of_loan_settled1: nature_of_loan_settled1
           credit_card_limit: 1
@@ -13818,6 +13858,10 @@ components:
         name_of_bureau: name_of_bureau
         bureau_score: 1
         max_dpd_tradeline_12months: 6
+        max_dpd_tradeline_last_6months: 12
+        max_dpd_tradeline_last_3months: 2
+        number_of_pl_enquiries_in_last_30days: 1
+        value_of_total_outstanding_loans: 12000
         loan_amount_settled_12months: 6.778325
         nature_of_loan_settled1: nature_of_loan_settled1
         credit_card_limit: 1
@@ -13925,6 +13969,18 @@ components:
         max_dpd_tradeline_12months:
           description: Maximum DPD Tradeline in the Last 12 Months
           type: integer
+        max_dpd_tradeline_last_3months:
+          description: Maximum DPD Tradeline in the Last 3 Months
+          type: integer
+        max_dpd_tradeline_last_6months:
+          description: Maximum DPD Tradeline in the Last 6 Months
+          type: integer
+        number_of_pl_enquiries_in_last_30days:
+          description: Number of Pl enquires in the Last 12 Months
+          type: integer
+        value_of_total_outstanding_loans:
+          description: Value of total outstanding loan in the Last 12 Months
+          type: float
         max_overdue_tradeline:
           description: Maximum Overdue Tradeline
           type: integer
