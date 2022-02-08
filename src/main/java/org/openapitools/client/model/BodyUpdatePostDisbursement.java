@@ -362,6 +362,22 @@ public class BodyUpdatePostDisbursement {
   @SerializedName(SERIALIZED_NAME_MAX_DPD_TRADELINE12MONTHS)
   private Integer maxDpdTradeline12months;
 
+  public static final String SERIALIZED_NAME_MAX_DPD_TRADELINE_LAST6MONTHS = "max_dpd_tradeline_last_6months";
+  @SerializedName(SERIALIZED_NAME_MAX_DPD_TRADELINE_LAST6MONTHS)
+  private Integer maxDpdTradelineLast6months;
+
+  public static final String SERIALIZED_NAME_MAX_DPD_TRADELINE_LAST3MONTHS = "max_dpd_tradeline_last_3months";
+  @SerializedName(SERIALIZED_NAME_MAX_DPD_TRADELINE_LAST3MONTHS)
+  private Integer maxDpdTradelineLast3months;
+
+  public static final String SERIALIZED_NAME_NUMBER_OF_PL_ENQUIRIES_IN_LAST_30DAYS = "number_of_pl_enquiries_in_last_30days";
+  @SerializedName(SERIALIZED_NAME_NUMBER_OF_PL_ENQUIRIES_IN_LAST_30DAYS)
+  private Integer numberOfPlEnquiriesInLast30days;
+
+  public static final String SERIALIZED_NAME_VALUE_OF_TOTAL_OUTSTANDING_LOANS = "value_of_total_outstanding_loans";
+  @SerializedName(SERIALIZED_NAME_VALUE_OF_TOTAL_OUTSTANDING_LOANS)
+  private Integer valueOfTotalOutstandingLoans;
+
   public static final String SERIALIZED_NAME_MAX_OVERDUE_TRADELINE = "max_overdue_tradeline";
   @SerializedName(SERIALIZED_NAME_MAX_OVERDUE_TRADELINE)
   private Integer maxOverdueTradeline;
