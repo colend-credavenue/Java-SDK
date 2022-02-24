@@ -308,6 +308,8 @@ paths:
         \ &quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;]</td>\
         \ \n</tr> \n      <tr>\n    <td>tds_certificate_link_password</td>\n    <td>string</td>\n\
         \    <td></td>\n         <td>Last Three Year TDS Certificate Link</td>\n \
+        \     <td>12345678</td> \n</tr> \n            <tr>\n    <td>ckyc_download_identifier</td>\n    <td>string</td>\n\
+        \    <td></td>\n         <td>CKYC Download Identifier</td>\n \
         \     <td>12345678</td> \n</tr> \n      <tr>\n    <td>business</td>\n    <td>object</td>\n\
         \    <td></td>\n   <td>Refer table Business for attributes</td>\n      <td>{&quot;name_of_business&quot;:&quot;Credavenue&quot;,&quot;nature_of_business&quot;:&quot;Electronics&quot;,&quot;type_of_constitution&quot;:&quot;partnership&quot;,&quot;type_of_ownership&quot;:&quot;type_of_ownership_35&quot;,&quot;registration_date&quot;:&quot;1995-01-01&quot;,&quot;incorporation_date&quot;:&quot;1995-01-01&quot;,&quot;industry_type&quot;:&quot;trading&quot;,&quot;sector_type&quot;:&quot;Financial\
         \ services&quot;,&quot;sub_sector_type&quot;:&quot;Banking&quot;,&quot;business_vintage&quot;:4,&quot;business_registered_office_address&quot;:&quot;221B,\
@@ -338,7 +340,7 @@ paths:
         \ Chopra&quot;,&quot;officer&quot;:&quot;Neeraj Chopra&quot;}&quot;,&quot;other_kyc_number&quot;:&quot;ABC12456&quot;,&quot;other_kyc_number_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;other_kyc_number_link_password&quot;:&quot;12345678&quot;,&quot;rent_agreement_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;rent_agreement_link_password&quot;:&quot;12345678&quot;,&quot;utility_bills_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;utility_bills_link_password&quot;:&quot;12345678&quot;,&quot;photo_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;photo_link_password&quot;:&quot;12345678&quot;,&quot;bureau_score&quot;:700,&quot;bureau_report_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;bureau_report_link_password&quot;:&quot;12345678&quot;,&quot;employment_details_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;employment_details_link_password&quot;:&quot;12345678&quot;,&quot;partner_score&quot;:3.0}]</td>\
         \ \n</tr> \n      <tr>\n    <td>bank_statement</td>\n    <td>object</td>\n\
         \    <td></td>\n   <td>Refer table BankStatement for attributes</td>\n   \
-        \   <td>{&quot;bank_statement_savings_account_12_months_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;bank_statement_savings_account_12_months_link_password&quot;:&quot;12345678&quot;,&quot;bank_statement_current_account_12_months_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;bank_statement_current_account_12_months_link_password&quot;:&quot;12345678&quot;,&quot;no_of_inward_chq_returns_savings_account&quot;:3,&quot;no_of_outward_chq_returns_savings_account&quot;:4,&quot;no_of_inward_chq_returns_current_account&quot;:5,&quot;no_of_outward_chq_returns_current_account&quot;:6,&quot;bank_account_type_for_assessment&quot;:&quot;savings&quot;,&quot;perfios_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;perfios_link_password&quot;:&quot;12345678&quot;,&quot;perfios_json_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;perfios_json_link_password&quot;:&quot;12345678&quot;,&quot;perfios_json&quot;:[&quot;NA&quot;,&quot;NA&quot;],&quot;finbit_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;finbit_link_password&quot;:&quot;12345678&quot;,&quot;finbit_json_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;finbit_json_link_password&quot;:&quot;12345678&quot;,&quot;finbit_json&quot;:[&quot;NA&quot;,&quot;NA&quot;],&quot;abb&quot;:25000.0,&quot;abd&quot;:10000.0,&quot;credit_summation&quot;:&quot;50000&quot;}</td>\
+        \   <td>{&quot;bank_statement_savings_account_12_months_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;bank_statement_savings_account_12_months_link_password&quot;:&quot;12345678&quot;,&quot;bank_statement_current_account_12_months_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;bank_statement_current_account_12_months_link_password&quot;:&quot;12345678&quot;,&quot;no_of_inward_chq_returns_savings_account&quot;:3,&quot;no_of_outward_chq_returns_savings_account&quot;:4,&quot;no_of_inward_chq_returns_current_account&quot;:5,&quot;no_of_outward_chq_returns_current_account&quot;:6,&quot;bank_account_type_for_assessment&quot;:&quot;savings&quot;,&quot;perfios_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;perfios_link_password&quot;:&quot;12345678&quot;,&quot;perfios_json_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;perfios_json_link_password&quot;:&quot;12345678&quot;,&quot;perfios_json&quot;:[&quot;NA&quot;,&quot;NA&quot;],&quot;finbit_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;finbit_link_password&quot;:&quot;12345678&quot;,&quot;finbit_json_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;finbit_json_link_password&quot;:&quot;12345678&quot;,&quot;finbit_json&quot;:[&quot;NA&quot;,&quot;NA&quot;],&quot;abb&quot;:25000.0,&quot;abd&quot;:10000.0,&quot;credit_summation&quot;:&quot;50000&quot,&quot;number_of_bank_transactions&quot;:&quot;12&quot;&quot;number_of_inward_transactions&quot;:&quot;12&quot;}</td>\
         \ \n</tr> \n      <tr>\n    <td>name_of_bureau</td>\n    <td>string</td>\n\
         \    <td></td>\n         <td>Cibil / Experian / Himark</td>\n      <td>cibil</td>\
         \ \n</tr> \n      <tr>\n    <td>bureau_vintage</td>\n    <td>integer</td>\n\
@@ -381,6 +383,15 @@ paths:
         \ Loans per Bureau Report</td>\n      <td>2</td> \n</tr> \n      <tr>\n  \
         \  <td>value_of_total_unsecured_loans</td>\n    <td>number</td>\n    <td>float</td>\n\
         \         <td>Total value of unsecured loans</td>\n      <td>20000.0</td>\
+        \ \n</tr> \n            <tr>\n  \
+        \  <td>writeoff_amount_suitfiled_settled_in_last_36_months</td>\n    <td>number</td>\n    <td>float</td>\n\
+        \         <td>Amount of writeoffs settled in last 36 months</td>\n      <td>10000.0</td>\
+        \ \n</tr> \n            <tr>\n  \
+        \  <td>dpd_days_last_1_month</td>\n    <td>integer</td>\n    <td></td>\n\
+        \         <td>Number of DPD in last 1 month</td>\n      <td>4</td>\
+        \ \n</tr> \n            <tr>\n  \
+        \  <td>dpd_days_last_3_months</td>\n    <td>integer</td>\n    <td></td>\n\
+        \         <td>Number of DPD in last 3 months</td>\n      <td>12</td>\
         \ \n</tr> \n      <tr>\n    <td>total_number_of_loans</td>\n    <td>integer</td>\n\
         \    <td></td>\n         <td>Total Number of Loans per Bureau Report</td>\n\
         \      <td>2</td> \n</tr> \n      <tr>\n    <td>value_of_total_loans</td>\n\
@@ -445,6 +456,12 @@ paths:
         \   <td></td>\n         <td>Existing EMI obligations</td>\n      <td>20000</td>\
         \ \n</tr> \n      <tr>\n    <td>viability_ratio</td>\n    <td>number</td>\n\
         \    <td>float</td>\n         <td>Net Assets/ Debt</td>\n      <td>2.0</td>\
+        \ \n</tr> \n      <tr>\n      <tr>\n    <td>loan_eligibility_to_income_ratio</td>\n    <td>integer</td>\n\
+        \    <td></td>\n         <td>The ratio of loan amount eligible to the personal income.</td>\n      <td>3</td>\
+        \ \n</tr> \n      <tr>\n      <tr>\n    <td>risk_category</td>\n    <td>string</td>\n\
+        \    <td></td>\n         <td>Risk Category</td>\n      <td>red</td>\
+        \ \n</tr> \n      <tr>\n      <tr>\n    <td>salary_credit_declared_income</td>\n    <td>integer</td>\n\
+        \    <td></td>\n         <td>Ratio of salary credit to customer account to the income declared</td>\n      <td>2</td>\
         \ \n</tr> \n      <tr>\n    <td>product_id</td>\n    <td>string</td>\n   \
         \ <td></td>\n         <td>Product ID created in CA</td>\n      <td>CONSUMER_001</td>\
         \ \n</tr> \n      <tr>\n    <td>client_loan_id</td>\n    <td>string</td>\n\
@@ -1242,7 +1259,11 @@ paths:
         \ Monthly Bank Deposits for the Last 12 Months</td>\n      <td>10000.0</td>\
         \ \n</tr> \n      <tr>\n    <td>credit_summation</td>\n    <td>string</td>\n\
         \    <td></td>\n         <td>Sum of all the credits in the bank statement</td>\n\
-        \      <td>50000</td> \n</tr> \n  </tbody>\n      </table>\n\n\n<h4>FinancialData</h4>\n\
+        \      <td>50000</td> \n</tr>      <tr>\n    <td>number_of_bank_transactions</td>\n    <td>integer</td>\n\
+        \    <td></td>\n         <td>Number of Bank Transactions</td>\n\
+        \      <td>12</td> \n</tr>      <tr>\n    <td>number_of_inward_transactions</td>\n    <td>integer</td>\n\
+        \    <td></td>\n         <td>Number of Inward Transactions</td>\n\
+        \      <td>12</td> \n</tr> \n  </tbody>\n      </table>\n\n\n<h4>FinancialData</h4>\n\
         \n<table>\n  <thead>\n    <tr>\n      <th>Field</th>\n      <th>Type</th>\n\
         \      <th>Format</th>\n             <th>Description</th>\n      <th>Example</th>\n\
         \    </tr>\n  </thead>\n  <tbody>      <tr>\n    <td>annual_business_turnover</td>\n\
@@ -1695,6 +1716,7 @@ paths:
               - https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg
               - https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg
               tds_certificate_link_password: "12345678"
+              ckyc_download_identifier: "12345678"
               business:
                 name_of_business: Credavenue
                 nature_of_business: Electronics
@@ -2192,6 +2214,8 @@ paths:
                 abb: 25000
                 abd: 10000
                 credit_summation: "50000"
+                number_of_bank_transactions: 4
+                number_of_inward_transactions: 20
               name_of_bureau: cibil
               bureau_vintage: 3
               bureau_score: 650
@@ -2217,6 +2241,9 @@ paths:
               no_of_credit_cards: 3
               total_number_of_unsecured_loans: 2
               value_of_total_unsecured_loans: 20000
+              writeoff_amount_suitfiled_settled_in_last_36_months: 10000
+              dpd_days_last_1_month: 4
+              dpd_days_last_3_months: 12
               total_number_of_loans: 2
               value_of_total_loans: 20000
               number_of_enquiries_3months: 3
@@ -2289,6 +2316,9 @@ paths:
               fcf: 24000
               emi_obligations: 20000
               viability_ratio: 2
+              loan_eligibility_to_income_ratio: 3
+              risk_category: "red"
+              salary_credit_declared_income: 2
               product_id: CONSUMER_001
               client_loan_id: LOAN00001
               application_id: LOAN00001
@@ -3214,6 +3244,8 @@ paths:
                   abb: 25000
                   abd: 10000
                   credit_summation: "50000"
+                  number_of_bank_transactions: 4
+                  number_of_inward_transactions: 20
                 financial_data:
                   annual_business_turnover: 1000000
                   annual_gross_profit: 8000000
@@ -4274,6 +4306,15 @@ paths:
         \ Loans per Bureau Report</td>\n      <td>2</td> \n</tr> \n      <tr>\n  \
         \  <td>value_of_total_unsecured_loans</td>\n    <td>number</td>\n    <td>float</td>\n\
         \         <td>Total value of unsecured loans</td>\n      <td>20000.0</td>\
+        \ \n</tr> \n                  <tr>\n  \
+        \  <td>writeoff_amount_suitfiled_settled_in_last_36_months</td>\n    <td>number</td>\n    <td>float</td>\n\
+        \         <td>Amount of writeoffs settled in last 36 months</td>\n      <td>10000.0</td>\
+        \ \n</tr> \n            <tr>\n  \
+        \  <td>dpd_days_last_1_month</td>\n    <td>integer</td>\n    <td></td>\n\
+        \         <td>Number of DPD in last 1 month</td>\n      <td>4</td>\
+        \ \n</tr> \n            <tr>\n  \
+        \  <td>dpd_days_last_3_months</td>\n    <td>integer</td>\n    <td></td>\n\
+        \         <td>Number of DPD in last 3 months</td>\n      <td>12</td>\
         \ \n</tr> \n      <tr>\n    <td>number_of_loans</td>\n    <td>integer</td>\n\
         \    <td></td>\n         <td>Total Number of Loans per Bureau Report</td>\n\
         \      <td>2</td> \n</tr> \n      <tr>\n    <td>value_of_total_loans</td>\n\
@@ -4800,6 +4841,9 @@ paths:
               number_of_credit_cards: 3
               number_of_unsecured_loans: 2
               value_of_total_unsecured_loans: 20000
+              writeoff_amount_suitfiled_settled_in_last_36_months: 10000
+              dpd_days_last_1_month: 4
+              dpd_days_last_3_months: 12
               number_of_loans: 2
               value_of_total_loans: 20000
               number_of_enquiries_3months: 3
@@ -6585,12 +6629,12 @@ paths:
         \ \n</tr> \n      <tr>\n    <td>loan_data</td>\n    <td>array</td>\n    <td></td>\n\
         \         <td>Refer table LoanData for attributes</td>\n      <td>[{&quot;pan_number&quot;:&quot;POIUY1234H&quot;,&quot;pan_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;pan_link_password&quot;:&quot;12345678&quot;,&quot;form_60_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;form_60_link_password&quot;:&quot;12345678&quot;,&quot;aadhar_number&quot;:&quot;987612345432&quot;,&quot;aadhar_number_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;aadhar_number_link_password&quot;:&quot;12345678&quot;,&quot;voter_id_number&quot;:&quot;RTG2291234&quot;,&quot;voter_id_number_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;voter_id_number_link_password&quot;:&quot;12345678&quot;,&quot;driving_license_number&quot;:&quot;TN0112345&quot;,&quot;driving_license_number_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;driving_license_number_link_password&quot;:&quot;12345678&quot;,&quot;passport_number&quot;:&quot;L4018345&quot;,&quot;passport_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;passport_link_password&quot;:&quot;12345678&quot;,&quot;video_image_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;video_image_link_password&quot;:&quot;12345678&quot;,&quot;video_kyc_detail&quot;:&quot;{&quot;profile_id&quot;:&quot;ABC12345&quot;,&quot;account_id&quot;:&quot;ABC12345&quot;,&quot;key&quot;:&quot;abc@123&quot;}&quot;,&quot;other_kyc_number&quot;:&quot;ABC12345&quot;,&quot;other_kyc_number_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;other_kyc_number_link_password&quot;:&quot;12345678&quot;,&quot;rent_agreement_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;rent_agreement_link_password&quot;:&quot;12345678&quot;,&quot;utility_bills_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;utility_bills_link_password&quot;:&quot;12345678&quot;,&quot;photo_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;photo_link_password&quot;:&quot;12345678&quot;,&quot;employer_tier&quot;:&quot;tier_1&quot;,&quot;employment_type&quot;:&quot;salaried&quot;,&quot;employment_details_name&quot;:&quot;Credavenue&quot;,&quot;employment_details_address&quot;:&quot;221B,\
         \ Baker Street, Chennai&quot;,&quot;employment_details_years_of_experience&quot;:3.0,&quot;employment_details_designation&quot;:&quot;IT\
-        \ Consultant&quot;,&quot;employement_vintage_current_organisation&quot;:&quot;3&quot;,&quot;payslip_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;payslip_link_password&quot;:&quot;12345678&quot;,&quot;tds_certificate_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;tds_certificate_link_password&quot;:&quot;12345678&quot;},{&quot;pan_number&quot;:&quot;POIUY1234H&quot;,&quot;pan_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;pan_link_password&quot;:&quot;12345678&quot;,&quot;form_60_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;form_60_link_password&quot;:&quot;12345678&quot;,&quot;aadhar_number&quot;:&quot;987612345432&quot;,&quot;aadhar_number_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;aadhar_number_link_password&quot;:&quot;12345678&quot;,&quot;voter_id_number&quot;:&quot;RTG2291234&quot;,&quot;voter_id_number_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;voter_id_number_link_password&quot;:&quot;12345678&quot;,&quot;driving_license_number&quot;:&quot;TN0112345&quot;,&quot;driving_license_number_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;driving_license_number_link_password&quot;:&quot;12345678&quot;,&quot;passport_number&quot;:&quot;L4018345&quot;,&quot;passport_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;passport_link_password&quot;:&quot;12345678&quot;,&quot;video_image_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;video_image_link_password&quot;:&quot;12345678&quot;,&quot;video_kyc_detail&quot;:&quot;{&quot;profile_id&quot;:&quot;ABC12345&quot;,&quot;account_id&quot;:&quot;ABC12345&quot;,&quot;key&quot;:&quot;abc@123&quot;}&quot;,&quot;other_kyc_number&quot;:&quot;ABC12345&quot;,&quot;other_kyc_number_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;other_kyc_number_link_password&quot;:&quot;12345678&quot;,&quot;rent_agreement_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;rent_agreement_link_password&quot;:&quot;12345678&quot;,&quot;utility_bills_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;utility_bills_link_password&quot;:&quot;12345678&quot;,&quot;photo_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;photo_link_password&quot;:&quot;12345678&quot;,&quot;employer_tier&quot;:&quot;tier_1&quot;,&quot;employment_type&quot;:&quot;salaried&quot;,&quot;employment_details_name&quot;:&quot;Credavenue&quot;,&quot;employment_details_address&quot;:&quot;221B,\
+        \ Consultant&quot;,&quot;employement_vintage_current_organisation&quot;:&quot;3&quot;,&quot;payslip_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;payslip_link_password&quot;:&quot;12345678&quot;,&quot;tds_certificate_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;tds_certificate_link_password&quot;:&quot;12345678&quot,&quot;ckyc_download_identifier&quot;:&quot;12345678&quot&quot},{&quot;pan_number&quot;:&quot;POIUY1234H&quot;,&quot;pan_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;pan_link_password&quot;:&quot;12345678&quot;,&quot;form_60_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;form_60_link_password&quot;:&quot;12345678&quot;,&quot;aadhar_number&quot;:&quot;987612345432&quot;,&quot;aadhar_number_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;aadhar_number_link_password&quot;:&quot;12345678&quot;,&quot;voter_id_number&quot;:&quot;RTG2291234&quot;,&quot;voter_id_number_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;voter_id_number_link_password&quot;:&quot;12345678&quot;,&quot;driving_license_number&quot;:&quot;TN0112345&quot;,&quot;driving_license_number_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;driving_license_number_link_password&quot;:&quot;12345678&quot;,&quot;passport_number&quot;:&quot;L4018345&quot;,&quot;passport_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;passport_link_password&quot;:&quot;12345678&quot;,&quot;video_image_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;video_image_link_password&quot;:&quot;12345678&quot;,&quot;video_kyc_detail&quot;:&quot;{&quot;profile_id&quot;:&quot;ABC12345&quot;,&quot;account_id&quot;:&quot;ABC12345&quot;,&quot;key&quot;:&quot;abc@123&quot;}&quot;,&quot;other_kyc_number&quot;:&quot;ABC12345&quot;,&quot;other_kyc_number_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;other_kyc_number_link_password&quot;:&quot;12345678&quot;,&quot;rent_agreement_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;rent_agreement_link_password&quot;:&quot;12345678&quot;,&quot;utility_bills_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;utility_bills_link_password&quot;:&quot;12345678&quot;,&quot;photo_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;photo_link_password&quot;:&quot;12345678&quot;,&quot;employer_tier&quot;:&quot;tier_1&quot;,&quot;employment_type&quot;:&quot;salaried&quot;,&quot;employment_details_name&quot;:&quot;Credavenue&quot;,&quot;employment_details_address&quot;:&quot;221B,\
         \ Baker Street, Chennai&quot;,&quot;employment_details_years_of_experience&quot;:3.0,&quot;employment_details_designation&quot;:&quot;IT\
-        \ Consultant&quot;,&quot;employement_vintage_current_organisation&quot;:&quot;3&quot;,&quot;payslip_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;payslip_link_password&quot;:&quot;12345678&quot;,&quot;tds_certificate_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;tds_certificate_link_password&quot;:&quot;12345678&quot;}]</td>\
+        \ Consultant&quot;,&quot;employement_vintage_current_organisation&quot;:&quot;3&quot;,&quot;payslip_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;payslip_link_password&quot;:&quot;12345678&quot;,&quot;tds_certificate_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;tds_certificate_link_password&quot;:&quot;12345678&quot,&quot;ckyc_download_identifier&quot;:&quot;12345678&quot;}]</td>\
         \ \n</tr> \n      <tr>\n    <td>bureau_report_data</td>\n    <td>object</td>\n\
         \    <td></td>\n    <td>Refer table BureauReportData for attributes</td>\n\
-        \      <td>{&quot;name_of_bureau&quot;:&quot;cibil&quot;,&quot;bureau_vintage&quot;:3,&quot;bureau_score&quot;:650,&quot;bureau_report_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;bureau_report_link_password&quot;:&quot;12345678&quot;,&quot;bureau_json_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;bureau_json_link_password&quot;:&quot;12345678&quot;,&quot;bureau_json&quot;:[&quot;{}&quot;,&quot;{}&quot;],&quot;commercial_bureau_score&quot;:330,&quot;commercial_bureau_score_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;commercial_bureau_score_link_password&quot;:&quot;12345678&quot;,&quot;partner_score_on_the_customer&quot;:800,&quot;total_existing_obligations&quot;:25000,&quot;credit_card_limit&quot;:30000,&quot;number_of_credit_cards&quot;:3,&quot;number_of_unsecured_loans&quot;:2,&quot;value_of_total_unsecured_loans&quot;:20000.0,&quot;number_of_loans&quot;:2,&quot;value_of_total_loans&quot;:20000.0,&quot;number_of_enquiries_3months&quot;:3,&quot;number_of_enquiries_6months&quot;:3,&quot;number_of_enquiries_12months&quot;:4,&quot;number_of_writeoff_suitfiled_settled_12months&quot;:4,&quot;max_dpd_tradeline_12months&quot;:6,&quot;max_overdue_tradeline&quot;:6,&quot;total_overdue_amount_12months&quot;:10000.0,&quot;loan_amount_settled_12months&quot;:25000.0,&quot;nature_of_loan_settled1&quot;:&quot;settled&quot;,&quot;nature_of_loan_settled2&quot;:&quot;closed&quot;,&quot;total_emi_bounces&quot;:3,&quot;emi_bounces_6months&quot;:3,&quot;emi_bounces_12months&quot;:3}</td>\
+        \      <td>{&quot;name_of_bureau&quot;:&quot;cibil&quot;,&quot;bureau_vintage&quot;:3,&quot;bureau_score&quot;:650,&quot;bureau_report_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;bureau_report_link_password&quot;:&quot;12345678&quot;,&quot;bureau_json_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;bureau_json_link_password&quot;:&quot;12345678&quot;,&quot;bureau_json&quot;:[&quot;{}&quot;,&quot;{}&quot;],&quot;commercial_bureau_score&quot;:330,&quot;commercial_bureau_score_link&quot;:[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;],&quot;commercial_bureau_score_link_password&quot;:&quot;12345678&quot;,&quot;partner_score_on_the_customer&quot;:800,&quot;total_existing_obligations&quot;:25000,&quot;credit_card_limit&quot;:30000,&quot;number_of_credit_cards&quot;:3,&quot;number_of_unsecured_loans&quot;:2,&quot;value_of_total_unsecured_loans&quot;:20000.0,&quot;writeoff_amount_suitfiled_settled_in_last_36_months&quot;:10000.0,&quot;dpd_days_last_1_month&quot;:4,&quot;dpd_days_last_3_months&quot;:12,&quot;number_of_loans&quot;:2,&quot;value_of_total_loans&quot;:20000.0,&quot;number_of_enquiries_3months&quot;:3,&quot;number_of_enquiries_6months&quot;:3,&quot;number_of_enquiries_12months&quot;:4,&quot;number_of_writeoff_suitfiled_settled_12months&quot;:4,&quot;max_dpd_tradeline_12months&quot;:6,&quot;max_overdue_tradeline&quot;:6,&quot;total_overdue_amount_12months&quot;:10000.0,&quot;loan_amount_settled_12months&quot;:25000.0,&quot;nature_of_loan_settled1&quot;:&quot;settled&quot;,&quot;nature_of_loan_settled2&quot;:&quot;closed&quot;,&quot;total_emi_bounces&quot;:3,&quot;emi_bounces_6months&quot;:3,&quot;emi_bounces_12months&quot;:3}</td>\
         \ \n</tr> \n      <tr>\n    <td>client_loan_id</td>\n    <td>string</td>\n\
         \    <td></td>\n         <td>Loan ID as per Partner&#39;s LMS</td>\n     \
         \ <td>LOAN00001</td> \n</tr> \n      <tr>\n    <td>business_data</td>\n  \
@@ -6732,6 +6776,8 @@ paths:
         \ &quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;]</td>\
         \ \n</tr> \n      <tr>\n    <td>tds_certificate_link_password</td>\n    <td>string</td>\n\
         \    <td></td>\n         <td>Last 3 Years TDS Certificate</td>\n      <td>12345678</td>\
+        \ \n</tr> \n        <tr>\n    <td>ckyc_download_identifier</td>\n    <td>string</td>\n\
+        \    <td></td>\n         <td>CKYC Download Identifier</td>\n      <td>12345678</td>\
         \ \n</tr> \n  </tbody>\n      </table>\n\n\n<h4>BureauJson</h4>\n\n<table>\n\
         \  <thead>\n    <tr>\n      <th>Field</th>\n      <th>Type</th>\n      <th>Format</th>\n\
         \             <th>Description</th>\n      <th>Example</th>\n    </tr>\n  </thead>\n\
@@ -6780,6 +6826,15 @@ paths:
         \ Loans per Bureau Report</td>\n      <td>2</td> \n</tr> \n      <tr>\n  \
         \  <td>value_of_total_unsecured_loans</td>\n    <td>number</td>\n    <td>float</td>\n\
         \         <td>Total value of unsecured loans</td>\n      <td>20000.0</td>\
+        \ \n</tr> \n      <tr>\n  \
+        \  <td>writeoff_amount_suitfiled_settled_in_last_36_months</td>\n    <td>number</td>\n    <td>float</td>\n\
+        \         <td>Amount of writeoffs settled in last 36 months</td>\n      <td>10000.0</td>\
+        \ \n</tr> \n            <tr>\n  \
+        \  <td>dpd_days_last_1_month</td>\n    <td>integer</td>\n    <td></td>\n\
+        \         <td>Number of DPD in last 1 month</td>\n      <td>4</td>\
+        \ \n</tr> \n            <tr>\n  \
+        \  <td>dpd_days_last_3_months</td>\n    <td>integer</td>\n    <td></td>\n\
+        \         <td>Number of DPD in last 3 months</td>\n      <td>12</td>\
         \ \n</tr> \n      <tr>\n    <td>number_of_loans</td>\n    <td>integer</td>\n\
         \    <td></td>\n         <td>Total Number of Loans per Bureau Report</td>\n\
         \      <td>2</td> \n</tr> \n      <tr>\n    <td>value_of_total_loans</td>\n\
@@ -7084,6 +7139,7 @@ paths:
                 - https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg
                 - https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg
                 tds_certificate_link_password: "12345678"
+                ckyc_download_identifier: "12345678"
               - pan_number: POIUY1234H
                 pan_link:
                 - https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg
@@ -7150,6 +7206,7 @@ paths:
                 - https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg
                 - https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg
                 tds_certificate_link_password: "12345678"
+                ckyc_download_identifier: "12345678"
               bureau_report_data:
                 name_of_bureau: cibil
                 bureau_vintage: 3
@@ -7176,6 +7233,9 @@ paths:
                 number_of_credit_cards: 3
                 number_of_unsecured_loans: 2
                 value_of_total_unsecured_loans: 20000
+                writeoff_amount_suitfiled_settled_in_last_36_months: 10000
+                dpd_days_last_1_month: 4
+                dpd_days_last_3_months: 12
                 number_of_loans: 2
                 value_of_total_loans: 20000
                 number_of_enquiries_3months: 3
@@ -7333,6 +7393,7 @@ paths:
                   - https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg
                   - https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg
                   tds_certificate_link_password: "12345678"
+                  ckyc_download_identifier: "12345678"
                 - pan_number: POIUY1234H
                   pan_link:
                   - https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg
@@ -7399,6 +7460,7 @@ paths:
                   - https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg
                   - https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg
                   tds_certificate_link_password: "12345678"
+                  ckyc_download_identifier: "12345678"
                 bureau_report_data:
                   name_of_bureau: cibil
                   bureau_vintage: 3
@@ -7425,6 +7487,9 @@ paths:
                   number_of_credit_cards: 3
                   number_of_unsecured_loans: 2
                   value_of_total_unsecured_loans: 20000
+                  writeoff_amount_suitfiled_settled_in_last_36_months: 10000
+                  dpd_days_last_1_month: 4
+                  dpd_days_last_3_months: 12
                   number_of_loans: 2
                   value_of_total_loans: 20000
                   number_of_enquiries_3months: 3
@@ -8567,6 +8632,9 @@ components:
         tds_certificate_link_password:
           description: Last Three Year TDS Certificate Link
           type: string
+        ckyc_download_identifier:
+          description: CKYC Download Identifier
+          type: string
         business:
           $ref: '#/components/schemas/body_create_loan_business'
         guarantors:
@@ -8647,6 +8715,16 @@ components:
           description: Total value of unsecured loans
           format: float
           type: number
+        writeoff_amount_suitfiled_settled_in_last_36_months:
+          description: Amount of writeoffs settled in last 36 months
+          format: float
+          type: number
+        dpd_days_last_1_month:
+          description: Number of DPD in last 1 month
+          type: integer
+        dpd_days_last_3_months:
+          description: Number of DPD in last 3 months
+          type: integer
         total_number_of_loans:
           description: Total Number of Loans per Bureau Report
           type: integer
@@ -8749,6 +8827,15 @@ components:
           description: Net Assets/ Debt
           format: float
           type: number
+        loan_eligibility_to_income_ratio:
+          description: The ratio of loan amount eligible to the personal income
+          type: nuintegermber
+        risk_category:
+          description: Risk Category
+          type: string
+        salary_credit_declared_income:
+          description: Ratio of salary credit to customer account to the income declared
+          type: string
         product_id:
           description: Product ID created in CA
           type: string
@@ -9461,6 +9548,8 @@ components:
           - finbit_json
           - finbit_json
           credit_summation: credit_summation
+          number_of_bank_transactions: number_of_bank_transactions
+          number_of_inward_transactions: number_of_inward_transactions
           no_of_outward_chq_returns_current_account: 3
           perfios_json:
           - perfios_json
@@ -10237,6 +10326,16 @@ components:
           description: Total value of unsecured loans
           format: float
           type: number
+        writeoff_amount_suitfiled_settled_in_last_36_months:
+          description: Amount of writeoffs settled in last 36 months
+          format: float
+          type: number
+        dpd_days_last_1_month:
+          description: Number of DPD in last 1 month
+          type: integer
+        dpd_days_last_3_months:
+          description: Number of DPD in last 3 months
+          type: integer
         number_of_loans:
           description: Total Number of Loans per Bureau Report
           type: integer
@@ -10567,6 +10666,7 @@ components:
           - form_60_link
           - form_60_link
           tds_certificate_link_password: tds_certificate_link_password
+          ckyc_download_identifier: ckyc_download_identifier
           photo_link:
           - photo_link
           - photo_link
@@ -10636,6 +10736,7 @@ components:
           - form_60_link
           - form_60_link
           tds_certificate_link_password: tds_certificate_link_password
+          ckyc_download_identifier: ckyc_download_identifier
           photo_link:
           - photo_link
           - photo_link
@@ -10691,6 +10792,9 @@ components:
           emi_bounces_6months: 5
           commercial_bureau_score_link_password: commercial_bureau_score_link_password
           value_of_total_unsecured_loans: 9.965781
+          writeoff_amount_suitfiled_settled_in_last_36_months: 10000
+          dpd_days_last_1_month: 4
+          dpd_days_last_3_months: 12
           number_of_unsecured_loans: 5
           commercial_bureau_score_link:
           - commercial_bureau_score_link
@@ -12349,6 +12453,8 @@ components:
         - finbit_json
         - finbit_json
         credit_summation: credit_summation
+        number_of_bank_transactions: number_of_bank_transactions
+        number_of_inward_transactions: number_of_inward_transactions
         no_of_outward_chq_returns_current_account: 3
         perfios_json:
         - perfios_json
@@ -12471,6 +12577,12 @@ components:
         credit_summation:
           description: Sum of all the credits in the bank statement
           type: string
+        number_of_bank_transactions:
+          description: Number of Bank Transactions
+          type: integer
+        number_of_inward_transactions:
+          description: Number of Inward Transactions
+          type: integer
       type: object
     body_create_loan_financial_data:
       description: Refer table FinancialData for attributes
@@ -13594,6 +13706,7 @@ components:
         - form_60_link
         - form_60_link
         tds_certificate_link_password: tds_certificate_link_password
+        ckyc_download_identifier: ckyc_download_identifier
         photo_link:
         - photo_link
         - photo_link
@@ -13792,6 +13905,9 @@ components:
         tds_certificate_link_password:
           description: Last 3 Years TDS Certificate
           type: string
+        ckyc_download_identifier:
+          description: CKYC Download Identifier
+          type: string
       type: object
     response_create_tranche_bureau_report_data:
       description: Refer table BureauReportData for attributes
@@ -13808,6 +13924,9 @@ components:
         emi_bounces_6months: 5
         commercial_bureau_score_link_password: commercial_bureau_score_link_password
         value_of_total_unsecured_loans: 9.965781
+        writeoff_amount_suitfiled_settled_in_last_36_months: 10000
+        dpd_days_last_1_month: 4
+        dpd_days_last_3_months: 12
         number_of_unsecured_loans: 5
         commercial_bureau_score_link:
         - commercial_bureau_score_link
@@ -13903,6 +14022,16 @@ components:
           description: Total value of unsecured loans
           format: float
           type: number
+        writeoff_amount_suitfiled_settled_in_last_36_months:
+          description: Amount of writeoffs settled in last 36 months
+          format: float
+          type: number
+        dpd_days_last_1_month:
+          description: Number of DPD in last 1 month
+          type: integer
+        dpd_days_last_3_months:
+          description: Number of DPD in last 3 months
+          type: integer
         number_of_loans:
           description: Total Number of Loans per Bureau Report
           type: integer

@@ -430,6 +430,10 @@ public class BodyCreateLoan {
   @SerializedName(SERIALIZED_NAME_TDS_CERTIFICATE_LINK_PASSWORD)
   private String tdsCertificateLinkPassword;
 
+  public static final String SERIALIZED_NAME_CKYC_DOWNLOAD_IDENTIFIER = "ckyc_download_identifier";
+  @SerializedName(SERIALIZED_NAME_CKYC_DOWNLOAD_IDENTIFIER)
+  private String ckycDownloadIdentifier;
+
   public static final String SERIALIZED_NAME_BUSINESS = "business";
   @SerializedName(SERIALIZED_NAME_BUSINESS)
   private BodyCreateLoanBusiness business;
@@ -513,6 +517,18 @@ public class BodyCreateLoan {
   public static final String SERIALIZED_NAME_VALUE_OF_TOTAL_UNSECURED_LOANS = "value_of_total_unsecured_loans";
   @SerializedName(SERIALIZED_NAME_VALUE_OF_TOTAL_UNSECURED_LOANS)
   private Float valueOfTotalUnsecuredLoans;
+
+  public static final String SERIALIZED_NAME_VALUE_OF_WRITEOFF_AMOUNT_SUITFILED_SETTLED_IN_LAST_36_MONTHS = "writeoff_amount_suitfiled_settled_in_last_36_months";
+  @SerializedName(SERIALIZED_NAME_VALUE_OF_WRITEOFF_AMOUNT_SUITFILED_SETTLED_IN_LAST_36_MONTHS)
+  private Float writeoffAmountSuitfiledSettledInLast36Months;
+
+  public static final String SERIALIZED_NAME_DPD_DAYS_LAST_1_MONTH = "dpd_days_last_1_month";
+  @SerializedName(SERIALIZED_NAME_DPD_DAYS_LAST_1_MONTH)
+  private Float dpdDaysLast1Month;
+
+  public static final String SERIALIZED_NAME_DPD_DAYS_LAST_3_MONTHS = "dpd_days_last_3_months";
+  @SerializedName(SERIALIZED_NAME_VALUE_OF_TOTALSERIALIZED_NAME_DPD_DAYS_LAST_3_MONTHS_UNSECURED_LOANS)
+  private Float dpdDaysLast3Months;
 
   public static final String SERIALIZED_NAME_TOTAL_NUMBER_OF_LOANS = "total_number_of_loans";
   @SerializedName(SERIALIZED_NAME_TOTAL_NUMBER_OF_LOANS)
@@ -629,6 +645,18 @@ public class BodyCreateLoan {
   public static final String SERIALIZED_NAME_VIABILITY_RATIO = "viability_ratio";
   @SerializedName(SERIALIZED_NAME_VIABILITY_RATIO)
   private Float viabilityRatio;
+
+  public static final String SERIALIZED_NAME_LOAN_ELIGIBILITY_TO_INCOME_RATIO = "loan_eligibility_to_income_ratio";
+  @SerializedName(SERIALIZED_NAME_LOAN_ELIGIBILITY_TO_INCOME_RATIO)
+  private Float loanEligibilityToIncomeRatio;
+
+  public static final String SERIALIZED_NAME_RISK_RATIO = "risk_category";
+  @SerializedName(SERIALIZED_NAME_RISK_RATIO)
+  private Float riskCategory;
+
+  public static final String SERIALIZED_NAME_SALARY_CREDIT_DECLARED_INCOME = "salary_credit_declared_income";
+  @SerializedName(SERIALIZED_NAME_SALARY_CREDIT_DECLARED_INCOME)
+  private Float salaryCreditDeclaredIncome;
 
   public static final String SERIALIZED_NAME_PRODUCT_ID = "product_id";
   @SerializedName(SERIALIZED_NAME_PRODUCT_ID)
@@ -3162,6 +3190,28 @@ public class BodyCreateLoan {
     this.tdsCertificateLinkPassword = tdsCertificateLinkPassword;
   }
 
+  public BodyCreateLoan ckycDownloadIdentifier(String ckycDownloadIdentifier) {
+    
+    this.ckycDownloadIdentifier = ckycDownloadIdentifier;
+    return this;
+  }
+
+   /**
+   * CKYC Download Identifier
+   * @return ckycDownloadIdentifier
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "CKYC Download Identifier")
+
+  public String getCkycDownloadIdentifier() {
+    return ckycDownloadIdentifier;
+  }
+
+
+  public void setCkycDownloadIdentifier(String ckycDownloadIdentifier) {
+    this.ckycDownloadIdentifier = ckycDownloadIdentifier;
+  }
+
 
   public BodyCreateLoan business(BodyCreateLoanBusiness business) {
     
@@ -3691,6 +3741,73 @@ public class BodyCreateLoan {
 
   public void setValueOfTotalUnsecuredLoans(Float valueOfTotalUnsecuredLoans) {
     this.valueOfTotalUnsecuredLoans = valueOfTotalUnsecuredLoans;
+  }
+
+  public BodyCreateLoan writeoffAmountSuitfiledSettledInLast36Months(Float writeoffAmountSuitfiledSettledInLast36Months) {
+    
+    this.writeoffAmountSuitfiledSettledInLast36Months = writeoffAmountSuitfiledSettledInLast36Months;
+    return this;
+  }
+
+   /**
+   * Amount of writeoffs settled in last 36 months
+   * @return writeoffAmountSuitfiledSettledInLast36Months
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "Amount of writeoffs settled in last 36 months")
+
+  public Float getWriteoffAmountSuitfiledSettledInLast36Months() {
+    return writeoffAmountSuitfiledSettledInLast36Months;
+  }
+
+
+  public void setWriteoffAmountSuitfiledSettledInLast36Months(Float writeoffAmountSuitfiledSettledInLast36Months) {
+    this.writeoffAmountSuitfiledSettledInLast36Months = writeoffAmountSuitfiledSettledInLast36Months;
+  }
+
+
+  public BodyCreateLoan dpdDaysLast1Month(Integer dpdDaysLast1Month) {
+    
+    this.dpdDaysLast1Month = dpdDaysLast1Month;
+    return this;
+  }
+
+   /**
+   * Number of DPD in last 1 month
+   * @return dpdDaysLast1Month
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "Number of DPD in last 1 month")
+
+  public Integer getDpdDaysLast1Month() {
+    return dpdDaysLast1Month;
+  }
+
+
+  public void setDpdDaysLast1Month(Integer dpdDaysLast1Month) {
+    this.dpdDaysLast1Month = dpdDaysLast1Month;
+  }
+
+  public BodyCreateLoan dpdDaysLast3Months(Integer dpdDaysLast3Months) {
+    
+    this.dpdDaysLast3Months = dpdDaysLast3Months;
+    return this;
+  }
+
+   /**
+   * Number of DPD in last 3 months
+   * @return dpdDaysLast3Months
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "Number of DPD in last 3 months")
+
+  public Integer getDpdDaysLast3Months() {
+    return dpdDaysLast3Months;
+  }
+
+
+  public void setDpdDaysLast3Months(Integer dpdDaysLast3Months) {
+    this.dpdDaysLast3Months = dpdDaysLast3Months;
   }
 
 
@@ -4358,6 +4475,74 @@ public class BodyCreateLoan {
 
   public void setViabilityRatio(Float viabilityRatio) {
     this.viabilityRatio = viabilityRatio;
+  }
+
+
+  public BodyCreateLoan loanEligibilityToIncomeRatio(Integer loanEligibilityToIncomeRatio) {
+    
+    this.loanEligibilityToIncomeRatio = loanEligibilityToIncomeRatio;
+    return this;
+  }
+
+   /**
+   * The ratio of loan amount eligible to the personal income
+   * @return loanEligibilityToIncomeRatio
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "The ratio of loan amount eligible to the personal income")
+
+  public Integer getLoanEligibilityToIncomeRatio() {
+    return loanEligibilityToIncomeRatio;
+  }
+
+
+  public void setLoanEligibilityToIncomeRatio(Integer loanEligibilityToIncomeRatio) {
+    this.loanEligibilityToIncomeRatio = loanEligibilityToIncomeRatio;
+  }
+
+  public BodyCreateLoan salaryCreditDeclaredIncome(Integer salaryCreditDeclaredIncome) {
+    
+    this.salaryCreditDeclaredIncome = salaryCreditDeclaredIncome;
+    return this;
+  }
+
+   /**
+   * Ratio of salary credit to customer account to the income declared
+   * @return salaryCreditDeclaredIncome
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "Ratio of salary credit to customer account to the income declared")
+
+  public Integer getSalaryCreditDeclaredIncome() {
+    return salaryCreditDeclaredIncome;
+  }
+
+
+  public void setSalaryCreditDeclaredIncome(Integer salaryCreditDeclaredIncome) {
+    this.salaryCreditDeclaredIncome = salaryCreditDeclaredIncome;
+  }
+
+
+  public BodyCreateLoan riskCategory(String riskCategory) {
+    
+    this.riskCategory = riskCategory;
+    return this;
+  }
+
+   /**
+   * Risk Category
+   * @return riskCategory
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "Risk Category")
+
+  public String getRiskCategory() {
+    return riskCategory;
+  }
+
+
+  public void setRiskCategory(String riskCategory) {
+    this.riskCategory = riskCategory;
   }
 
 
@@ -5795,6 +5980,7 @@ public class BodyCreateLoan {
         Objects.equals(this.payslipLinkPassword, bodyCreateLoan.payslipLinkPassword) &&
         Objects.equals(this.tdsCertificateLink, bodyCreateLoan.tdsCertificateLink) &&
         Objects.equals(this.tdsCertificateLinkPassword, bodyCreateLoan.tdsCertificateLinkPassword) &&
+        Objects.equals(this.ckycDownloadIdentifier, bodyCreateLoan.ckycDownloadIdentifier) &&
         Objects.equals(this.business, bodyCreateLoan.business) &&
         Objects.equals(this.guarantors, bodyCreateLoan.guarantors) &&
         Objects.equals(this.coApplicants, bodyCreateLoan.coApplicants) &&
@@ -5816,6 +6002,9 @@ public class BodyCreateLoan {
         Objects.equals(this.noOfCreditCards, bodyCreateLoan.noOfCreditCards) &&
         Objects.equals(this.totalNumberOfUnsecuredLoans, bodyCreateLoan.totalNumberOfUnsecuredLoans) &&
         Objects.equals(this.valueOfTotalUnsecuredLoans, bodyCreateLoan.valueOfTotalUnsecuredLoans) &&
+        Objects.equals(this.writeoffAmountSuitfiledSettledInLast36Months, bodyCreateLoan.writeoffAmountSuitfiledSettledInLast36Months) &&
+        Objects.equals(this.dpdDaysLast1Month, bodyCreateLoan.dpdDaysLast1Month) &&
+        Objects.equals(this.dpdDaysLast3Months, bodyCreateLoan.dpdDaysLast3Months) &&
         Objects.equals(this.totalNumberOfLoans, bodyCreateLoan.totalNumberOfLoans) &&
         Objects.equals(this.valueOfTotalLoans, bodyCreateLoan.valueOfTotalLoans) &&
         Objects.equals(this.numberOfEnquiries3months, bodyCreateLoan.numberOfEnquiries3months) &&
@@ -5845,6 +6034,9 @@ public class BodyCreateLoan {
         Objects.equals(this.fcf, bodyCreateLoan.fcf) &&
         Objects.equals(this.emiObligations, bodyCreateLoan.emiObligations) &&
         Objects.equals(this.viabilityRatio, bodyCreateLoan.viabilityRatio) &&
+        Objects.equals(this.loanEligibilityToIncomeRatio, bodyCreateLoan.loanEligibilityToIncomeRatio) &&
+        Objects.equals(this.riskCategory, bodyCreateLoan.riskCategory) &&
+        Objects.equals(this.salaryCreditDeclaredIncome, bodyCreateLoan.salaryCreditDeclaredIncome) &&
         Objects.equals(this.productId, bodyCreateLoan.productId) &&
         Objects.equals(this.clientLoanId, bodyCreateLoan.clientLoanId) &&
         Objects.equals(this.applicationId, bodyCreateLoan.applicationId) &&
@@ -5904,7 +6096,7 @@ public class BodyCreateLoan {
 
   @Override
   public int hashCode() {
-    return Objects.hash(customerType, customerCategory, clientCustomerId, title, firstName, middleName, lastName, gender, dateOfBirth, age, mobileNumber, phoneNumber, email, officialEmailId, placeOfBirth, currentAddress, currentVillage, currentCityTier, currentCity, currentDistrict, currentState, currentCountry, currentPincode, residenceTypeCurrentAddress, yearsOfStayInCurrentAddress, permanentAddress, permanentCity, permanentCityTier, permanentDistrict, permanentState, permanentPincode, residenceTypePermanentAddress, yearsOfStayInPermanentAddress, mailingAddress, maritalStatus, religion, nationality, fatherName, motherName, spouseName, educationQualification, netMonthlyIncome, annualIncome, noOfDependants, occupation, partnerScoreOnTheCustomer, politicallyExposed, incomeSource, applicantProfession, cautionNegativeProfile, udyamNumber, panCheck, dedupeStatus, panNumber, panNumberLink, panNumberLinkPassword, form60Link, form60LinkPassword, aadharNumber, aadharNumberLink, aadharNumberLinkPassword, voterIdNumber, votingIdLink, votingIdLinkPassword, drivingLicenseNumber, drivingLicenseNumberLink, drivingLicenseNumberLinkPassword, drivingLicenseExpiryDate, passportNumber, passportNumberLink, passportNumberLinkPassword, videoImageLink, videoImageLinkPassword, videoKycDetail, otherKycNumber, otherKycLink, otherKycLinkPassword, rentAgreementLink, rentAgreementLinkPassword, utilityBillsLink, utilityBillsLinkPassword, photoLink, photoLinkPassword, employerTier, employerCategory, employmentType, employmentDetailsName, employmentDetailsAddress, employmentDetailsYearsOfExperience, employmentDetailsDesignation, employementVintageCurrentOrganisation, totalWorkExperience, payslipLink, payslipLinkPassword, tdsCertificateLink, tdsCertificateLinkPassword, business, guarantors, coApplicants, bankStatement, nameOfBureau, bureauVintage, bureauScore, bureauReportJsonLink, bureauReportJsonLinkPassword, bureauJsonLink, bureauJsonLinkPassword, bureauJson, commercialBureauScore, commercialBureauScoreLink, commercialBureauScoreLinkPassword, partnerScoreOnTheCustomerIncludingBureauReport, totalExistingObligations, creditCardLimit, noOfCreditCards, totalNumberOfUnsecuredLoans, valueOfTotalUnsecuredLoans, totalNumberOfLoans, valueOfTotalLoans, numberOfEnquiries3months, numberOfEnquiries6months, numberOfEnquiries12months, numberOfWriteoffSuitfiledSettledInTheLast12Months, maxDpdTradelineLast12months, maxOverdueTradeline, totalOverdueAmountInLast12m, amountOfLoanSettledInLast12m, natureOfLoanSettled1, natureOfLoanSettled2, totalEmiBounces, bouncesInLast6m, bouncesInLast12m, bureauValidityDate, financialData, abbEmiRatio, dscr, foir, ltr, insr, eligibilityAsPerInsr, eligibilityAsPerFoir, eligibilityAsPerLtv, eligibilityLoanAmount, fcf, emiObligations, viabilityRatio, productId, clientLoanId, applicationId, loanCycle, partnerBranchCode, partnerBranchName, productType, partnerProductCode, partnerSchemeCode, category, subCategory, purpose, disbursementType, numberOfTranches, endBorrowerAmount, existingLenderAmount, principalAmount, interestRate, interestType, tenure, tenureFrequency, repaymentFrequency, numberOfRepayments, firstRepaymentDate, repaymentMode, advanceEmi, umrn, interestStartDate, differentialInterest, processingFee, stampDuty, insuranceCharges, documentationCharges, otherCharges, loanPlrType, loanPlrRate, spreadId, loanEmi, rcuStatus, surrogate, subClass, weakerSection, disbursementAccounts, assets, references, insuranceDetails, pslFlag, pslDescription, pslCode, pslProofLink, pslProofLinkPassword, tranches, linkedLoanInfos, sourcingDetail, deviationDetails);
+    return Objects.hash(customerType, customerCategory, clientCustomerId, title, firstName, middleName, lastName, gender, dateOfBirth, age, mobileNumber, phoneNumber, email, officialEmailId, placeOfBirth, currentAddress, currentVillage, currentCityTier, currentCity, currentDistrict, currentState, currentCountry, currentPincode, residenceTypeCurrentAddress, yearsOfStayInCurrentAddress, permanentAddress, permanentCity, permanentCityTier, permanentDistrict, permanentState, permanentPincode, residenceTypePermanentAddress, yearsOfStayInPermanentAddress, mailingAddress, maritalStatus, religion, nationality, fatherName, motherName, spouseName, educationQualification, netMonthlyIncome, annualIncome, noOfDependants, occupation, partnerScoreOnTheCustomer, politicallyExposed, incomeSource, applicantProfession, cautionNegativeProfile, udyamNumber, panCheck, dedupeStatus, panNumber, panNumberLink, panNumberLinkPassword, form60Link, form60LinkPassword, aadharNumber, aadharNumberLink, aadharNumberLinkPassword, voterIdNumber, votingIdLink, votingIdLinkPassword, drivingLicenseNumber, drivingLicenseNumberLink, drivingLicenseNumberLinkPassword, drivingLicenseExpiryDate, passportNumber, passportNumberLink, passportNumberLinkPassword, videoImageLink, videoImageLinkPassword, videoKycDetail, otherKycNumber, otherKycLink, otherKycLinkPassword, rentAgreementLink, rentAgreementLinkPassword, utilityBillsLink, utilityBillsLinkPassword, photoLink, photoLinkPassword, employerTier, employerCategory, employmentType, employmentDetailsName, employmentDetailsAddress, employmentDetailsYearsOfExperience, employmentDetailsDesignation, employementVintageCurrentOrganisation, totalWorkExperience, payslipLink, payslipLinkPassword, tdsCertificateLink, tdsCertificateLinkPassword, ckycDownloadIdentifier, business, guarantors, coApplicants, bankStatement, nameOfBureau, bureauVintage, bureauScore, bureauReportJsonLink, bureauReportJsonLinkPassword, bureauJsonLink, bureauJsonLinkPassword, bureauJson, commercialBureauScore, commercialBureauScoreLink, commercialBureauScoreLinkPassword, partnerScoreOnTheCustomerIncludingBureauReport, totalExistingObligations, creditCardLimit, noOfCreditCards, totalNumberOfUnsecuredLoans, valueOfTotalUnsecuredLoans, writeoffAmountSuitfiledSettledInLast36Months, dpdDaysLast1Month, dpdDaysLast3Months, totalNumberOfLoans, valueOfTotalLoans, numberOfEnquiries3months, numberOfEnquiries6months, numberOfEnquiries12months, numberOfWriteoffSuitfiledSettledInTheLast12Months, maxDpdTradelineLast12months, maxOverdueTradeline, totalOverdueAmountInLast12m, amountOfLoanSettledInLast12m, natureOfLoanSettled1, natureOfLoanSettled2, totalEmiBounces, bouncesInLast6m, bouncesInLast12m, bureauValidityDate, financialData, abbEmiRatio, dscr, foir, ltr, insr, eligibilityAsPerInsr, eligibilityAsPerFoir, eligibilityAsPerLtv, eligibilityLoanAmount, fcf, emiObligations, viabilityRatio, loanEligibilityToIncomeRatio, riskCategory, salaryCreditDeclaredIncome, productId, clientLoanId, applicationId, loanCycle, partnerBranchCode, partnerBranchName, productType, partnerProductCode, partnerSchemeCode, category, subCategory, purpose, disbursementType, numberOfTranches, endBorrowerAmount, existingLenderAmount, principalAmount, interestRate, interestType, tenure, tenureFrequency, repaymentFrequency, numberOfRepayments, firstRepaymentDate, repaymentMode, advanceEmi, umrn, interestStartDate, differentialInterest, processingFee, stampDuty, insuranceCharges, documentationCharges, otherCharges, loanPlrType, loanPlrRate, spreadId, loanEmi, rcuStatus, surrogate, subClass, weakerSection, disbursementAccounts, assets, references, insuranceDetails, pslFlag, pslDescription, pslCode, pslProofLink, pslProofLinkPassword, tranches, linkedLoanInfos, sourcingDetail, deviationDetails);
   }
 
   @Override
@@ -6007,6 +6199,7 @@ public class BodyCreateLoan {
     sb.append("    payslipLinkPassword: ").append(toIndentedString(payslipLinkPassword)).append("\n");
     sb.append("    tdsCertificateLink: ").append(toIndentedString(tdsCertificateLink)).append("\n");
     sb.append("    tdsCertificateLinkPassword: ").append(toIndentedString(tdsCertificateLinkPassword)).append("\n");
+    sb.append("    ckycDownloadIdentifier: ").append(toIndentedString(ckycDownloadIdentifier)).append("\n");    
     sb.append("    business: ").append(toIndentedString(business)).append("\n");
     sb.append("    guarantors: ").append(toIndentedString(guarantors)).append("\n");
     sb.append("    coApplicants: ").append(toIndentedString(coApplicants)).append("\n");
@@ -6028,6 +6221,9 @@ public class BodyCreateLoan {
     sb.append("    noOfCreditCards: ").append(toIndentedString(noOfCreditCards)).append("\n");
     sb.append("    totalNumberOfUnsecuredLoans: ").append(toIndentedString(totalNumberOfUnsecuredLoans)).append("\n");
     sb.append("    valueOfTotalUnsecuredLoans: ").append(toIndentedString(valueOfTotalUnsecuredLoans)).append("\n");
+    sb.append("    writeoffAmountSuitfiledSettledInLast36Months: ").append(toIndentedString(writeoffAmountSuitfiledSettledInLast36Months)).append("\n");
+    sb.append("    dpdDaysLast1Month: ").append(toIndentedString(dpdDaysLast1Month)).append("\n");
+    sb.append("    dpdDaysLast3Months: ").append(toIndentedString(dpdDaysLast3Months)).append("\n");
     sb.append("    totalNumberOfLoans: ").append(toIndentedString(totalNumberOfLoans)).append("\n");
     sb.append("    valueOfTotalLoans: ").append(toIndentedString(valueOfTotalLoans)).append("\n");
     sb.append("    numberOfEnquiries3months: ").append(toIndentedString(numberOfEnquiries3months)).append("\n");
@@ -6057,6 +6253,9 @@ public class BodyCreateLoan {
     sb.append("    fcf: ").append(toIndentedString(fcf)).append("\n");
     sb.append("    emiObligations: ").append(toIndentedString(emiObligations)).append("\n");
     sb.append("    viabilityRatio: ").append(toIndentedString(viabilityRatio)).append("\n");
+    sb.append("    loanEligibilityToIncomeRatio: ").append(toIndentedString(loanEligibilityToIncomeRatio)).append("\n");
+    sb.append("    riskCategory: ").append(toIndentedString(riskCategory)).append("\n");
+    sb.append("    salaryCreditDeclaredIncome: ").append(toIndentedString(salaryCreditDeclaredIncome)).append("\n");
     sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
     sb.append("    clientLoanId: ").append(toIndentedString(clientLoanId)).append("\n");
     sb.append("    applicationId: ").append(toIndentedString(applicationId)).append("\n");
