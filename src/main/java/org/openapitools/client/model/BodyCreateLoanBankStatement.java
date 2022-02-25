@@ -120,6 +120,14 @@ public class BodyCreateLoanBankStatement {
   @SerializedName(SERIALIZED_NAME_CREDIT_SUMMATION)
   private String creditSummation;
 
+  public static final String SERIALIZED_NAME_NUMBER_OF_BANK_TRANSACTIONS = "number_of_bank_transactions";
+  @SerializedName(SERIALIZED_NAME_NUMBER_OF_BANK_TRANSACTIONS)
+  private String numberOfBankTransactions;
+
+  public static final String SERIALIZED_NAME_NUMBER_OF_INWARD_TRANSACTIONS = "number_of_inward_transactions";
+  @SerializedName(SERIALIZED_NAME_NUMBER_OF_INWARD_TRANSACTIONS)
+  private String numberOfInwardTransactions;
+
 
   public BodyCreateLoanBankStatement bankStatementSavingsAccount12MonthsLink(List<String> bankStatementSavingsAccount12MonthsLink) {
     
@@ -690,6 +698,50 @@ public class BodyCreateLoanBankStatement {
     this.creditSummation = creditSummation;
   }
 
+  public BodyCreateLoanBankStatement numberOfBankTransactions(Integer numberOfBankTransactions) {
+    
+    this.numberOfBankTransactions = numberOfBankTransactions;
+    return this;
+  }
+
+   /**
+   * Number of Bank Transactions
+   * @return numberOfBankTransactions
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "Number of Bank Transactions")
+
+  public Integer getNumberOfBankTransactions() {
+    return numberOfBankTransactions;
+  }
+
+
+  public void setNumberOfBankTransactions(Integer numberOfBankTransactions) {
+    this.numberOfBankTransactions = numberOfBankTransactions;
+  }
+
+  public BodyCreateLoanBankStatement numberOfInwardTransactions(Integer numberOfInwardTransactions) {
+    
+    this.numberOfInwardTransactions = numberOfInwardTransactions;
+    return this;
+  }
+
+   /**
+   * Number of Inward Transactions
+   * @return numberOfInwardTransactions
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "Number of Inward Transactions")
+
+  public Integer getNumberOfBankTransactions() {
+    return numberOfInwardTransactions;
+  }
+
+
+  public void setNumberOfBankTransactions(Integer numberOfInwardTransactions) {
+    this.numberOfInwardTransactions = numberOfInwardTransactions;
+  }
+
 
   @Override
   public boolean equals(Object o) {
@@ -722,11 +774,13 @@ public class BodyCreateLoanBankStatement {
         Objects.equals(this.abb, bodyCreateLoanBankStatement.abb) &&
         Objects.equals(this.abd, bodyCreateLoanBankStatement.abd) &&
         Objects.equals(this.creditSummation, bodyCreateLoanBankStatement.creditSummation);
+        Objects.equals(this.numberOfBankTransactions, bodyCreateLoanBankStatement.numberOfBankTransactions);
+        Objects.equals(this.numberOfInwardTransactions, bodyCreateLoanBankStatement.numberOfInwardTransactions);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(bankStatementSavingsAccount12MonthsLink, bankStatementSavingsAccount12MonthsLinkPassword, bankStatementCurrentAccount12MonthsLink, bankStatementCurrentAccount12MonthsLinkPassword, noOfInwardChqReturnsSavingsAccount, noOfOutwardChqReturnsSavingsAccount, noOfInwardChqReturnsCurrentAccount, noOfOutwardChqReturnsCurrentAccount, bankAccountTypeForAssessment, perfiosLink, perfiosLinkPassword, perfiosJsonLink, perfiosJsonLinkPassword, perfiosJson, finbitLink, finbitLinkPassword, finbitJsonLink, finbitJsonLinkPassword, finbitJson, abb, abd, creditSummation);
+    return Objects.hash(bankStatementSavingsAccount12MonthsLink, bankStatementSavingsAccount12MonthsLinkPassword, bankStatementCurrentAccount12MonthsLink, bankStatementCurrentAccount12MonthsLinkPassword, noOfInwardChqReturnsSavingsAccount, noOfOutwardChqReturnsSavingsAccount, noOfInwardChqReturnsCurrentAccount, noOfOutwardChqReturnsCurrentAccount, bankAccountTypeForAssessment, perfiosLink, perfiosLinkPassword, perfiosJsonLink, perfiosJsonLinkPassword, perfiosJson, finbitLink, finbitLinkPassword, finbitJsonLink, finbitJsonLinkPassword, finbitJson, abb, abd, creditSummation, numberOfBankTransactions, numberOfInwardTransactions);
   }
 
   @Override
@@ -755,6 +809,8 @@ public class BodyCreateLoanBankStatement {
     sb.append("    abb: ").append(toIndentedString(abb)).append("\n");
     sb.append("    abd: ").append(toIndentedString(abd)).append("\n");
     sb.append("    creditSummation: ").append(toIndentedString(creditSummation)).append("\n");
+    sb.append("    numberOfBankTransactions: ").append(toIndentedString(numberOfBankTransactions)).append("\n");
+    sb.append("    numberOfInwardTransactions: ").append(toIndentedString(numberOfInwardTransactions)).append("\n");
     sb.append("}");
     return sb.toString();
   }
