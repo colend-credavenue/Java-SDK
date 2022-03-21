@@ -135,7 +135,9 @@ paths:
         \ is currently residing. Free flowing for now</td>\n      <td>India</td> \n\
         </tr> \n      <tr>\n    <td>current_pincode</td>\n    <td>integer</td>\n \
         \   <td></td>\n         <td>Pincode of the current address</td>\n      <td>600089</td>\
-        \ \n</tr> \n      <tr>\n    <td>residence_type_current_address</td>\n    <td>string</td>\n\
+        \ \n</tr> \n      <tr>\n    <td>pincode_verified</td>\n\
+        \    <td>string</td>\n    <td></td>\n         <td>Is the pincode verified?</td>\n      <td>yes</td> \n\
+        </tr> \n      <tr>\n    <td>residence_type_current_address</td>\n    <td>string</td>\n\
         \    <td></td>\n         <td>rented / owned / leased</td>\n      <td>rented</td>\
         \ \n</tr> \n      <tr>\n    <td>years_of_stay_in_current_address</td>\n  \
         \  <td>integer</td>\n    <td></td>\n         <td>How many years stayed in\
@@ -221,6 +223,8 @@ paths:
         \ &quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;]</td>\
         \ \n</tr> \n      <tr>\n    <td>aadhar_number_link_password</td>\n    <td>string</td>\n\
         \    <td></td>\n         <td>Aadhar image password</td>\n      <td>12345678</td>\
+        \ \n</tr> \n      <tr>\n    <td>aadhar_name_match</td>\n    <td>string</td>\n\
+        \    <td></td>\n         <td>Aadhar name match</td>\n      <td>yes</td>\
         \ \n</tr> \n      <tr>\n    <td>voter_id_number</td>\n    <td>string</td>\n\
         \    <td></td>\n         <td>Voter ID Number of customer</td>\n      <td>RTG2291234</td>\
         \ \n</tr> \n      <tr>\n    <td>voting_id_link</td>\n    <td>array</td>\n\
@@ -276,7 +280,9 @@ paths:
         \         <td>Photo Image of the Customer</td>\n      <td>[&quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;,\
         \ &quot;https://cdn.pixabay.com/photo/2017/06/22/20/22/green-2432374_1280.jpg&quot;]</td>\
         \ \n</tr> \n      <tr>\n    <td>photo_link_password</td>\n    <td>string</td>\n\
-        \    <td></td>\n         <td>Photo Image password</td>\n      <td>12345678</td>\
+        \    <td></td>\n         <td>Photo Image password</td>\n      <td>12345678</td>\ </tr> \n      <tr>\n    <td>mobile_verification_flag</td>\n    <td>string</td>\n\
+        \    <td></td>\n         <td>Mobile Verification Flag</td>\n      <td>yes</td>\ </tr> \n      <tr>\n    <td>selfie_check_flag</td>\n    <td>string</td>\n\
+        \    <td></td>\n         <td>Selfie Check Flag</td>\n      <td>yes</td>\
         \ \n</tr> \n      <tr>\n    <td>employer_tier</td>\n    <td>string</td>\n\
         \    <td></td>\n         <td>tier_1, tier_2 etc. for  the employer</td>\n\
         \      <td>tier_1</td> \n</tr> \n      <tr>\n    <td>employer_category</td>\n\
@@ -396,10 +402,19 @@ paths:
         \     <tr>\n    <td>number_of_writeoff_suitfiled_settled_in_the_last_12_months</td>\n\
         \    <td>integer</td>\n    <td></td>\n         <td>Number of Writeoff Suitfiled\
         \ Settled in the Last 12 Months</td>\n      <td>4</td> \n</tr> \n      <tr>\n\
+        <tr>\n    <td>number_of_writeoff_suitfiled_settled_in_the_last_36_months</td>\n\
+        \    <td>integer</td>\n    <td></td>\n         <td>Number of Writeoff Suitfiled\
+        \ Settled in the Last 36 Months</td>\n      <td>4</td> \n</tr> \n      <tr>\n\
         \    <td>max_dpd_tradeline_last_12months</td>\n    <td>integer</td>\n    <td></td>\n\
         \         <td>Maximum DPD Tradeline in the Last 12 Months</td>\n      <td>6</td>\
         \ \n</tr> \n      <tr>\n    <td>max_overdue_tradeline</td>\n    <td>integer</td>\n\
         \    <td></td>\n         <td>Maximum Overdue Tradeline</td>\n      <td>6</td>\
+        \ \n</tr> \n      <tr>\n    <td>number_of_30plus_dpd_in_last_3_months</td>\n    <td>integer</td>\n\
+        \    <td></td>\n         <td>Number of DPD > 30 days in last 3 Months</td>\n      <td>6</td>\
+        \ \n</tr> \n      <tr>\n    <td>number_of_60plus_dpd_in_last_6_months</td>\n    <td>integer</td>\n\
+        \    <td></td>\n         <td>Number of DPD > 60 days in last 6 Months</td>\n      <td>6</td>\
+        \ \n</tr> \n      <tr>\n    <td>number_of_30plus_dpd_in_last_12_months</td>\n    <td>integer</td>\n\
+        \    <td></td>\n         <td>Number of DPD > 30 days in last 12 Months</td>\n      <td>6</td>\
         \ \n</tr> \n      <tr>\n    <td>total_overdue_amount_in_last_12m</td>\n  \
         \  <td>number</td>\n    <td>float</td>\n         <td>Total Overdue Amount\
         \ in the Last 12 Months</td>\n      <td>10000.0</td> \n</tr> \n      <tr>\n\

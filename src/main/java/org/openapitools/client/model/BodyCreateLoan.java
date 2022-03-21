@@ -138,6 +138,10 @@ public class BodyCreateLoan {
   @SerializedName(SERIALIZED_NAME_CURRENT_PINCODE)
   private Integer currentPincode;
 
+  public static final String SERIALIZED_NAME_PINCODE_VERIFIED = "pincode_verified";
+  @SerializedName(SERIALIZED_NAME_PINCODE_VERIFIED)
+  private String pincodeVerified;
+
   public static final String SERIALIZED_NAME_RESIDENCE_TYPE_CURRENT_ADDRESS = "residence_type_current_address";
   @SerializedName(SERIALIZED_NAME_RESIDENCE_TYPE_CURRENT_ADDRESS)
   private String residenceTypeCurrentAddress;
@@ -290,6 +294,10 @@ public class BodyCreateLoan {
   @SerializedName(SERIALIZED_NAME_AADHAR_NUMBER_LINK_PASSWORD)
   private String aadharNumberLinkPassword;
 
+  public static final String SERIALIZED_NAME_AADHAR_NAME_MATCH = "aadhar_name_match";
+  @SerializedName(SERIALIZED_NAME_AADHAR_NAME_MATCH)
+  private String aadharNameMatch;
+
   public static final String SERIALIZED_NAME_VOTER_ID_NUMBER = "voter_id_number";
   @SerializedName(SERIALIZED_NAME_VOTER_ID_NUMBER)
   private String voterIdNumber;
@@ -377,6 +385,14 @@ public class BodyCreateLoan {
   public static final String SERIALIZED_NAME_PHOTO_LINK_PASSWORD = "photo_link_password";
   @SerializedName(SERIALIZED_NAME_PHOTO_LINK_PASSWORD)
   private String photoLinkPassword;
+
+  public static final String SERIALIZED_NAME_MOBILE_VERIFICATION_FLAG = "mobile_verification_flag";
+  @SerializedName(SERIALIZED_NAME_MOBILE_VERIFICATION_FLAG)
+  private String mobileVerificationFlag;
+  
+  public static final String SERIALIZED_NAME_SELFIE_CHECK_FLAG = "selfie_check_flag";
+  @SerializedName(SERIALIZED_NAME_SELFIE_CHECK_FLAG)
+  private String selfieCheckFlag;
 
   public static final String SERIALIZED_NAME_EMPLOYER_TIER = "employer_tier";
   @SerializedName(SERIALIZED_NAME_EMPLOYER_TIER)
@@ -537,6 +553,10 @@ public class BodyCreateLoan {
   public static final String SERIALIZED_NAME_NUMBER_OF_WRITEOFF_SUITFILED_SETTLED_IN_THE_LAST12_MONTHS = "number_of_writeoff_suitfiled_settled_in_the_last_12_months";
   @SerializedName(SERIALIZED_NAME_NUMBER_OF_WRITEOFF_SUITFILED_SETTLED_IN_THE_LAST12_MONTHS)
   private Integer numberOfWriteoffSuitfiledSettledInTheLast12Months;
+  
+  public static final String SERIALIZED_NAME_NUMBER_OF_WRITEOFF_SUITFILED_SETTLED_IN_THE_LAST36_MONTHS = "number_of_writeoff_suitfiled_settled_in_the_last_36_months";
+  @SerializedName(SERIALIZED_NAME_NUMBER_OF_WRITEOFF_SUITFILED_SETTLED_IN_THE_LAST36_MONTHS)
+  private Integer numberOfWriteoffSuitfiledSettledInTheLast36Months;
 
   public static final String SERIALIZED_NAME_MAX_DPD_TRADELINE_LAST12MONTHS = "max_dpd_tradeline_last_12months";
   @SerializedName(SERIALIZED_NAME_MAX_DPD_TRADELINE_LAST12MONTHS)
@@ -545,6 +565,18 @@ public class BodyCreateLoan {
   public static final String SERIALIZED_NAME_MAX_OVERDUE_TRADELINE = "max_overdue_tradeline";
   @SerializedName(SERIALIZED_NAME_MAX_OVERDUE_TRADELINE)
   private Integer maxOverdueTradeline;
+
+  public static final String SERIALIZED_NAME_NUMBER_OF_30PLUS_DPD_IN_LAST_3_MONTHS = "number_of_30plus_dpd_in_last_3_months";
+  @SerializedName(SERIALIZED_NAME_NUMBER_OF_30PLUS_DPD_IN_LAST_3_MONTHS)
+  private Integer numberOf30plusDpdInLast3Months;
+
+  public static final String SERIALIZED_NAME_NUMBER_OF_60PLUS_DPD_IN_LAST_6_MONTHS = "number_of_60plus_dpd_in_last_6_months";
+  @SerializedName(SERIALIZED_NAME_NUMBER_OF_60PLUS_DPD_IN_LAST_6_MONTHS)
+  private Integer numberOf60plusDpdInLast6Months;
+
+  public static final String SERIALIZED_NAME_NUMBER_OF_30PLUS_DPD_IN_LAST_12_MONTHS = "number_of_30plus_dpd_in_last_12_months";
+  @SerializedName(SERIALIZED_NAME_NUMBER_OF_30PLUS_DPD_IN_LAST_12_MONTHS)
+  private Integer numberOf30plusDpdInLast12Months;
 
   public static final String SERIALIZED_NAME_TOTAL_OVERDUE_AMOUNT_IN_LAST12M = "total_overdue_amount_in_last_12m";
   @SerializedName(SERIALIZED_NAME_TOTAL_OVERDUE_AMOUNT_IN_LAST12M)
@@ -1377,6 +1409,28 @@ public class BodyCreateLoan {
 
   public void setCurrentPincode(Integer currentPincode) {
     this.currentPincode = currentPincode;
+  }
+
+    public BodyCreateLoan pincodeVerified(String pincodeVerified) {
+    
+    this.pincodeVerified = pincodeVerified;
+    return this;
+  }
+
+   /**
+   * Is the pincode verified?
+   * @return pincodeVerified
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "Country in which applicant is currently residing. Free flowing for now")
+
+  public String getpincodeVerified() {
+    return pincodeVerified;
+  }
+
+
+  public void setpincodeVerified(String pincodeVerified) {
+    this.pincodeVerified = pincodeVerified;
   }
 
 
@@ -2277,6 +2331,27 @@ public class BodyCreateLoan {
     this.aadharNumberLinkPassword = aadharNumberLinkPassword;
   }
 
+  public BodyCreateLoan aadharNameMatch(String aadharNameMatch) {
+    
+    this.aadharNameMatch = aadharNameMatch;
+    return this;
+  }
+
+   /**
+   * Aadhar Name Match
+   * @return aadharNameMatch
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "Aadhar name match")
+
+  public String getAadharNameMatch() {
+    return aadharNameMatch;
+  }
+
+
+  public void setAadharNameMatch(String aadharNameMatch) {
+    this.aadharNameMatch = aadharNameMatch;
+  }
 
   public BodyCreateLoan voterIdNumber(String voterIdNumber) {
     
@@ -2847,6 +2922,49 @@ public class BodyCreateLoan {
     this.photoLinkPassword = photoLinkPassword;
   }
 
+  public BodyCreateLoan mobileVerificationFlag(String mobileVerificationFlag) {
+    
+    this.mobileVerificationFlag = mobileVerificationFlag;
+    return this;
+  }
+
+   /**
+   * Mobile Verification Flag
+   * @return mobileVerificationFlag
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "Mobile Verification Flag")
+
+  public String getMobileVerificationFlag() {
+    return mobileVerificationFlag;
+  }
+
+
+  public void setMobileVerificationFlag(String mobileVerificationFlag) {
+    this.mobileVerificationFlag = selfieCheckFlag;
+  }
+
+  public BodyCreateLoan selfieCheckFlag(String selfieCheckFlag) {
+    
+    this.selfieCheckFlag = selfieCheckFlag;
+    return this;
+  }
+
+   /**
+   * Mobile Verification Flag
+   * @return selfieCheckFlag
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "Selfie Check Flag")
+
+  public String getSelfieCheckFlag() {
+    return selfieCheckFlag;
+  }
+
+
+  public void setSelfieCheckFlag(String selfieCheckFlag) {
+    this.selfieCheckFlag = selfieCheckFlag;
+  }
 
   public BodyCreateLoan employerTier(String employerTier) {
     
@@ -3831,6 +3949,28 @@ public class BodyCreateLoan {
     this.numberOfWriteoffSuitfiledSettledInTheLast12Months = numberOfWriteoffSuitfiledSettledInTheLast12Months;
   }
 
+  public BodyCreateLoan numberOfWriteoffSuitfiledSettledInTheLast36Months(Integer numberOfWriteoffSuitfiledSettledInTheLast36Months) {
+    
+    this.numberOfWriteoffSuitfiledSettledInTheLast36Months = numberOfWriteoffSuitfiledSettledInTheLast36Months;
+    return this;
+  }
+
+   /**
+   * Number of Writeoff Suitfiled Settled in the Last 12 Months
+   * @return numberOfWriteoffSuitfiledSettledInTheLast36Months
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "Number of Writeoff Suitfiled Settled in the Last 36 Months")
+
+  public Integer getnumberOfWriteoffSuitfiledSettledInTheLast36Months() {
+    return numberOfWriteoffSuitfiledSettledInTheLast36Months;
+  }
+
+
+  public void setnumberOfWriteoffSuitfiledSettledInTheLast36Months(Integer numberOfWriteoffSuitfiledSettledInTheLast36Months) {
+    this.numberOfWriteoffSuitfiledSettledInTheLast36Months = numberOfWriteoffSuitfiledSettledInTheLast36Months;
+  }
+
 
   public BodyCreateLoan maxDpdTradelineLast12months(Integer maxDpdTradelineLast12months) {
     
@@ -3877,6 +4017,71 @@ public class BodyCreateLoan {
     this.maxOverdueTradeline = maxOverdueTradeline;
   }
 
+  public BodyCreateLoan numberOf30plusDpdInLast3Months(Integer numberOf30plusDpdInLast3Months) {
+    
+    this.numberOf30plusDpdInLast3Months = numberOf30plusDpdInLast3Months;
+    return this;
+  }
+
+   /**
+   * Number of DPD > 30 days in last 3 Months
+   * @return numberOf30plusDpdInLast3Months
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "Number of DPD > 30 days in last 3 Months")
+
+  public Integer getNumberOf30plusDpdInLast3Months() {
+    return numberOf30plusDpdInLast3Months;
+  }
+
+
+  public void setNumberOf30plusDpdInLast3Months(Integer numberOf30plusDpdInLast12Months) {
+    this.numberOf30plusDpdInLast3Months = numberOf30plusDpdInLast3Months;
+  }
+
+  public BodyCreateLoan numberOf60plusDpdInLast6Months(Integer numberOf60plusDpdInLast6Months) {
+    
+    this.numberOf60plusDpdInLast6Months = numberOf60plusDpdInLast6Months;
+    return this;
+  }
+
+   /**
+   * Number of DPD > 60 days in last 6 Months
+   * @return numberOf60plusDpdInLast6Months
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "Number of DPD > 60 days in last 6 Months")
+
+  public Integer getNumberOf60plusDpdInLast6Months() {
+    return numberOf60plusDpdInLast6Months;
+  }
+
+
+  public void setNumberOf60plusDpdInLast6Months(Integer numberOf60plusDpdInLast6Months) {
+    this.numberOf60plusDpdInLast6Months = numberOf60plusDpdInLast6Months;
+  }
+
+  public BodyCreateLoan numberOf30plusDpdInLast12Months(Integer numberOf30plusDpdInLast12Months) {
+    
+    this.numberOf30plusDpdInLast12Months = numberOf30plusDpdInLast12Months;
+    return this;
+  }
+
+   /**
+   * Number of DPD > 30 days in last 12 Months
+   * @return numberOf30plusDpdInLast12Months
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "Number of DPD > 30 days in last 12 Months")
+
+  public Integer getNumberOf30plusDpdInLast12Months() {
+    return numberOf30plusDpdInLast12Months;
+  }
+
+
+  public void setNumberOf30plusDpdInLast12Months(Integer numberOf30plusDpdInLast12Months) {
+    this.numberOf30plusDpdInLast12Months = numberOf30plusDpdInLast12Months;
+  }
 
   public BodyCreateLoan totalOverdueAmountInLast12m(Float totalOverdueAmountInLast12m) {
     
@@ -5722,6 +5927,7 @@ public class BodyCreateLoan {
         Objects.equals(this.currentState, bodyCreateLoan.currentState) &&
         Objects.equals(this.currentCountry, bodyCreateLoan.currentCountry) &&
         Objects.equals(this.currentPincode, bodyCreateLoan.currentPincode) &&
+        Objects.equals(this.pincodeVerified, bodyCreateLoan.pincodeVerified) &&
         Objects.equals(this.residenceTypeCurrentAddress, bodyCreateLoan.residenceTypeCurrentAddress) &&
         Objects.equals(this.yearsOfStayInCurrentAddress, bodyCreateLoan.yearsOfStayInCurrentAddress) &&
         Objects.equals(this.permanentAddress, bodyCreateLoan.permanentAddress) &&
@@ -5782,6 +5988,8 @@ public class BodyCreateLoan {
         Objects.equals(this.utilityBillsLinkPassword, bodyCreateLoan.utilityBillsLinkPassword) &&
         Objects.equals(this.photoLink, bodyCreateLoan.photoLink) &&
         Objects.equals(this.photoLinkPassword, bodyCreateLoan.photoLinkPassword) &&
+        Objects.equals(this.mobileVerificationFlag, bodyCreateLoan.mobileVerificationFlag) &&
+        Objects.equals(this.selfieCheckFlag, bodyCreateLoan.selfieCheckFlag) &&
         Objects.equals(this.employerTier, bodyCreateLoan.employerTier) &&
         Objects.equals(this.employerCategory, bodyCreateLoan.employerCategory) &&
         Objects.equals(this.employmentType, bodyCreateLoan.employmentType) &&
@@ -5822,8 +6030,12 @@ public class BodyCreateLoan {
         Objects.equals(this.numberOfEnquiries6months, bodyCreateLoan.numberOfEnquiries6months) &&
         Objects.equals(this.numberOfEnquiries12months, bodyCreateLoan.numberOfEnquiries12months) &&
         Objects.equals(this.numberOfWriteoffSuitfiledSettledInTheLast12Months, bodyCreateLoan.numberOfWriteoffSuitfiledSettledInTheLast12Months) &&
+        Objects.equals(this.numberOfWriteoffSuitfiledSettledInTheLast36Months, bodyCreateLoan.numberOfWriteoffSuitfiledSettledInTheLast36Months) &&
         Objects.equals(this.maxDpdTradelineLast12months, bodyCreateLoan.maxDpdTradelineLast12months) &&
         Objects.equals(this.maxOverdueTradeline, bodyCreateLoan.maxOverdueTradeline) &&
+        Objects.equals(this.numberOf30plusDpdInLast3Months, bodyCreateLoan.numberOf30plusDpdInLast3Months) &&
+        Objects.equals(this.numberOf60plusDpdInLast6Months, bodyCreateLoan.numberOf60plusDpdInLast6Months) &&
+        Objects.equals(this.numberOf30plusDpdInLast12Months, bodyCreateLoan.numberOf30plusDpdInLast12Months) &&
         Objects.equals(this.totalOverdueAmountInLast12m, bodyCreateLoan.totalOverdueAmountInLast12m) &&
         Objects.equals(this.amountOfLoanSettledInLast12m, bodyCreateLoan.amountOfLoanSettledInLast12m) &&
         Objects.equals(this.natureOfLoanSettled1, bodyCreateLoan.natureOfLoanSettled1) &&
@@ -5904,7 +6116,7 @@ public class BodyCreateLoan {
 
   @Override
   public int hashCode() {
-    return Objects.hash(customerType, customerCategory, clientCustomerId, title, firstName, middleName, lastName, gender, dateOfBirth, age, mobileNumber, phoneNumber, email, officialEmailId, placeOfBirth, currentAddress, currentVillage, currentCityTier, currentCity, currentDistrict, currentState, currentCountry, currentPincode, residenceTypeCurrentAddress, yearsOfStayInCurrentAddress, permanentAddress, permanentCity, permanentCityTier, permanentDistrict, permanentState, permanentPincode, residenceTypePermanentAddress, yearsOfStayInPermanentAddress, mailingAddress, maritalStatus, religion, nationality, fatherName, motherName, spouseName, educationQualification, netMonthlyIncome, annualIncome, noOfDependants, occupation, partnerScoreOnTheCustomer, politicallyExposed, incomeSource, applicantProfession, cautionNegativeProfile, udyamNumber, panCheck, dedupeStatus, panNumber, panNumberLink, panNumberLinkPassword, form60Link, form60LinkPassword, aadharNumber, aadharNumberLink, aadharNumberLinkPassword, voterIdNumber, votingIdLink, votingIdLinkPassword, drivingLicenseNumber, drivingLicenseNumberLink, drivingLicenseNumberLinkPassword, drivingLicenseExpiryDate, passportNumber, passportNumberLink, passportNumberLinkPassword, videoImageLink, videoImageLinkPassword, videoKycDetail, otherKycNumber, otherKycLink, otherKycLinkPassword, rentAgreementLink, rentAgreementLinkPassword, utilityBillsLink, utilityBillsLinkPassword, photoLink, photoLinkPassword, employerTier, employerCategory, employmentType, employmentDetailsName, employmentDetailsAddress, employmentDetailsYearsOfExperience, employmentDetailsDesignation, employementVintageCurrentOrganisation, totalWorkExperience, payslipLink, payslipLinkPassword, tdsCertificateLink, tdsCertificateLinkPassword, business, guarantors, coApplicants, bankStatement, nameOfBureau, bureauVintage, bureauScore, bureauReportJsonLink, bureauReportJsonLinkPassword, bureauJsonLink, bureauJsonLinkPassword, bureauJson, commercialBureauScore, commercialBureauScoreLink, commercialBureauScoreLinkPassword, partnerScoreOnTheCustomerIncludingBureauReport, totalExistingObligations, creditCardLimit, noOfCreditCards, totalNumberOfUnsecuredLoans, valueOfTotalUnsecuredLoans, totalNumberOfLoans, valueOfTotalLoans, numberOfEnquiries3months, numberOfEnquiries6months, numberOfEnquiries12months, numberOfWriteoffSuitfiledSettledInTheLast12Months, maxDpdTradelineLast12months, maxOverdueTradeline, totalOverdueAmountInLast12m, amountOfLoanSettledInLast12m, natureOfLoanSettled1, natureOfLoanSettled2, totalEmiBounces, bouncesInLast6m, bouncesInLast12m, bureauValidityDate, financialData, abbEmiRatio, dscr, foir, ltr, insr, eligibilityAsPerInsr, eligibilityAsPerFoir, eligibilityAsPerLtv, eligibilityLoanAmount, fcf, emiObligations, viabilityRatio, productId, clientLoanId, applicationId, loanCycle, partnerBranchCode, partnerBranchName, productType, partnerProductCode, partnerSchemeCode, category, subCategory, purpose, disbursementType, numberOfTranches, endBorrowerAmount, existingLenderAmount, principalAmount, interestRate, interestType, tenure, tenureFrequency, repaymentFrequency, numberOfRepayments, firstRepaymentDate, repaymentMode, advanceEmi, umrn, interestStartDate, differentialInterest, processingFee, stampDuty, insuranceCharges, documentationCharges, otherCharges, loanPlrType, loanPlrRate, spreadId, loanEmi, rcuStatus, surrogate, subClass, weakerSection, disbursementAccounts, assets, references, insuranceDetails, pslFlag, pslDescription, pslCode, pslProofLink, pslProofLinkPassword, tranches, linkedLoanInfos, sourcingDetail, deviationDetails);
+    return Objects.hash(customerType, customerCategory, clientCustomerId, title, firstName, middleName, lastName, gender, dateOfBirth, age, mobileNumber, phoneNumber, email, officialEmailId, placeOfBirth, currentAddress, currentVillage, currentCityTier, currentCity, currentDistrict, currentState, currentCountry, currentPincode, pincodeVerified, residenceTypeCurrentAddress, yearsOfStayInCurrentAddress, permanentAddress, permanentCity, permanentCityTier, permanentDistrict, permanentState, permanentPincode, residenceTypePermanentAddress, yearsOfStayInPermanentAddress, mailingAddress, maritalStatus, religion, nationality, fatherName, motherName, spouseName, educationQualification, netMonthlyIncome, annualIncome, noOfDependants, occupation, partnerScoreOnTheCustomer, politicallyExposed, incomeSource, applicantProfession, cautionNegativeProfile, udyamNumber, panCheck, dedupeStatus, panNumber, panNumberLink, panNumberLinkPassword, form60Link, form60LinkPassword, aadharNumber, aadharNumberLink, aadharNumberLinkPassword, voterIdNumber, votingIdLink, votingIdLinkPassword, drivingLicenseNumber, drivingLicenseNumberLink, drivingLicenseNumberLinkPassword, drivingLicenseExpiryDate, passportNumber, passportNumberLink, passportNumberLinkPassword, videoImageLink, videoImageLinkPassword, videoKycDetail, otherKycNumber, otherKycLink, otherKycLinkPassword, rentAgreementLink, rentAgreementLinkPassword, utilityBillsLink, utilityBillsLinkPassword, photoLink, photoLinkPassword, mobileVerificationFlag, selfieCheckFlag, employerTier, employerCategory, employmentType, employmentDetailsName, employmentDetailsAddress, employmentDetailsYearsOfExperience, employmentDetailsDesignation, employementVintageCurrentOrganisation, totalWorkExperience, payslipLink, payslipLinkPassword, tdsCertificateLink, tdsCertificateLinkPassword, business, guarantors, coApplicants, bankStatement, nameOfBureau, bureauVintage, bureauScore, bureauReportJsonLink, bureauReportJsonLinkPassword, bureauJsonLink, bureauJsonLinkPassword, bureauJson, commercialBureauScore, commercialBureauScoreLink, commercialBureauScoreLinkPassword, partnerScoreOnTheCustomerIncludingBureauReport, totalExistingObligations, creditCardLimit, noOfCreditCards, totalNumberOfUnsecuredLoans, valueOfTotalUnsecuredLoans, totalNumberOfLoans, valueOfTotalLoans, numberOfEnquiries3months, numberOfEnquiries6months, numberOfEnquiries12months, numberOfWriteoffSuitfiledSettledInTheLast12Months, numberOfWriteoffSuitfiledSettledInTheLast36Months, maxDpdTradelineLast12months, maxOverdueTradeline, numberOf30plusDpdInLast3Months, numberOf60plusDpdInLast6Months, numberOf30plusDpdInLast12Months, totalOverdueAmountInLast12m, amountOfLoanSettledInLast12m, natureOfLoanSettled1, natureOfLoanSettled2, totalEmiBounces, bouncesInLast6m, bouncesInLast12m, bureauValidityDate, financialData, abbEmiRatio, dscr, foir, ltr, insr, eligibilityAsPerInsr, eligibilityAsPerFoir, eligibilityAsPerLtv, eligibilityLoanAmount, fcf, emiObligations, viabilityRatio, productId, clientLoanId, applicationId, loanCycle, partnerBranchCode, partnerBranchName, productType, partnerProductCode, partnerSchemeCode, category, subCategory, purpose, disbursementType, numberOfTranches, endBorrowerAmount, existingLenderAmount, principalAmount, interestRate, interestType, tenure, tenureFrequency, repaymentFrequency, numberOfRepayments, firstRepaymentDate, repaymentMode, advanceEmi, umrn, interestStartDate, differentialInterest, processingFee, stampDuty, insuranceCharges, documentationCharges, otherCharges, loanPlrType, loanPlrRate, spreadId, loanEmi, rcuStatus, surrogate, subClass, weakerSection, disbursementAccounts, assets, references, insuranceDetails, pslFlag, pslDescription, pslCode, pslProofLink, pslProofLinkPassword, tranches, linkedLoanInfos, sourcingDetail, deviationDetails);
   }
 
   @Override
@@ -5933,6 +6145,7 @@ public class BodyCreateLoan {
     sb.append("    currentDistrict: ").append(toIndentedString(currentDistrict)).append("\n");
     sb.append("    currentState: ").append(toIndentedString(currentState)).append("\n");
     sb.append("    currentCountry: ").append(toIndentedString(currentCountry)).append("\n");
+    sb.append("    pincodeVerified: ").append(toIndentedString(pincodeVerified)).append("\n");
     sb.append("    currentPincode: ").append(toIndentedString(currentPincode)).append("\n");
     sb.append("    residenceTypeCurrentAddress: ").append(toIndentedString(residenceTypeCurrentAddress)).append("\n");
     sb.append("    yearsOfStayInCurrentAddress: ").append(toIndentedString(yearsOfStayInCurrentAddress)).append("\n");
@@ -5994,6 +6207,8 @@ public class BodyCreateLoan {
     sb.append("    utilityBillsLinkPassword: ").append(toIndentedString(utilityBillsLinkPassword)).append("\n");
     sb.append("    photoLink: ").append(toIndentedString(photoLink)).append("\n");
     sb.append("    photoLinkPassword: ").append(toIndentedString(photoLinkPassword)).append("\n");
+    sb.append("    mobileVerificationFlag: ").append(toIndentedString(mobileVerificationFlag)).append("\n");
+    sb.append("    selfieCheckFlag: ").append(toIndentedString(selfieCheckFlag)).append("\n");
     sb.append("    employerTier: ").append(toIndentedString(employerTier)).append("\n");
     sb.append("    employerCategory: ").append(toIndentedString(employerCategory)).append("\n");
     sb.append("    employmentType: ").append(toIndentedString(employmentType)).append("\n");
@@ -6034,8 +6249,12 @@ public class BodyCreateLoan {
     sb.append("    numberOfEnquiries6months: ").append(toIndentedString(numberOfEnquiries6months)).append("\n");
     sb.append("    numberOfEnquiries12months: ").append(toIndentedString(numberOfEnquiries12months)).append("\n");
     sb.append("    numberOfWriteoffSuitfiledSettledInTheLast12Months: ").append(toIndentedString(numberOfWriteoffSuitfiledSettledInTheLast12Months)).append("\n");
+     sb.append("    numberOfWriteoffSuitfiledSettledInTheLast36Months: ").append(toIndentedString(numberOfWriteoffSuitfiledSettledInTheLast36Months)).append("\n");
     sb.append("    maxDpdTradelineLast12months: ").append(toIndentedString(maxDpdTradelineLast12months)).append("\n");
     sb.append("    maxOverdueTradeline: ").append(toIndentedString(maxOverdueTradeline)).append("\n");
+    sb.append("    numberOf30plusDpdInLast3Months: ").append(toIndentedString(numberOf30plusDpdInLast3Months)).append("\n");
+    sb.append("    numberOf60plusDpdInLast6Months: ").append(toIndentedString(numberOf60plusDpdInLast6Months)).append("\n");
+    sb.append("    numberOf30plusDpdInLast12Months: ").append(toIndentedString(numberOf30plusDpdInLast12Months)).append("\n");
     sb.append("    totalOverdueAmountInLast12m: ").append(toIndentedString(totalOverdueAmountInLast12m)).append("\n");
     sb.append("    amountOfLoanSettledInLast12m: ").append(toIndentedString(amountOfLoanSettledInLast12m)).append("\n");
     sb.append("    natureOfLoanSettled1: ").append(toIndentedString(natureOfLoanSettled1)).append("\n");
